@@ -1,0 +1,1038 @@
+.banner {
+  width: 100%;
+}
+@media #{$desktop} {
+  .banner-box {
+    position: relative;
+    padding: 100px 0 58px;
+    width: 100%;
+    background: #fff;
+    background-image: url('../image/weBanner.png');
+    background-repeat: no-repeat;
+    background-size: 100% 660px;
+    background-position: top;
+    height: auto;
+    // &:after {
+    //   content: '';
+    //   position: absolute;
+    //   top: 0;
+    //   right: 0;
+    //   z-index: 1;
+    //   width: 100%;
+    //   min-width: 1080px;
+    //   height: 100%;
+    //   min-height: 780px;
+    //   background-image: url('../image/weBanner.png');
+    //   background-repeat: no-repeat;
+    //   background-size: 100% 500px;
+    //   background-position: top;
+    // }
+  }
+  .banner {
+    width: 1080px;
+    margin: 0 auto;
+
+    &_text {
+      font-size: 44px;
+      font-weight: 600;
+      color: #22292f;
+      line-height: 62px;
+      margin-top: 50px;
+    }
+    &_text-title {
+      display: none;
+    }
+    &_small_img {
+      display: none;
+    }
+    &_text_img {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &_big_img {
+      width: 400px;
+      height: 200px;
+      border-radius: 10px;
+      border: 1px solid #979797;
+    }
+    &_dec {
+      width: 522px;
+      font-size: 18px;
+      font-weight: 300;
+      color: #7a7f82;
+      line-height: 36px;
+      margin-top: 20px;
+    }
+    &_link {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+      padding-bottom: 30px;
+      span {
+        font-size: 16px;
+        font-family: PTMono-Regular, PTMono !important;
+        font-weight: 400;
+        color: #22292f;
+        line-height: 20px;
+      }
+      .huobi_logo {
+        display: inline-block;
+        background-image: url('../icon/huobi-logo.svg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 168px;
+        height: 20px;
+        margin-right: 20px;
+      }
+      .binance_logo {
+        width: 144px;
+        height: 20px;
+        background-image: url('../icon/binance.svg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+      .polygon_logo {
+        width: 88px;
+        height: 20px;
+        background-image: url('../icon/polygon.svg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+    }
+    &_svg__links {
+      display: flex;
+      margin-bottom: 0;
+      li {
+        margin: 0 10px;
+        height: 21px;
+      }
+
+      a {
+        display: block;
+        width: 24px;
+        svg {
+          fill: #22292f;
+          &:hover {
+            fill: #0f8c20;
+          }
+        }
+        img {
+          width: 18px;
+          height: 24px;
+          &:hover {
+            svg {
+              fill: #0f8c20;
+            }
+          }
+        }
+      }
+    }
+    &_pdf {
+      display: flex;
+      align-items: center;
+      padding: 28px 0;
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 16px;
+        padding: 0 14px;
+        height: 40px;
+        background: #0f8c20;
+        border-radius: 24px;
+        &:hover {
+          background: #00b900;
+        }
+      }
+      .pdf-icon {
+        width: 18px;
+        height: 18px;
+        background: url('../icon/CTK@2x.png') no-repeat;
+        background-size: 100% 100%;
+      }
+      .pdf-text {
+        margin-left: 8px;
+        margin-bottom: 0;
+        font-size: 16px;
+        font-weight: 300;
+        color: #ffffff;
+      }
+      .down-load {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background: url('../icon/folder-download@2x.png') no-repeat;
+        background-size: 100% 100%;
+      }
+    }
+    &_related {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 50px;
+      margin: 0 auto 0;
+      width: 1080px;
+      height: 140px;
+      background: url('../../assets/icon/related_bg@2x.png') no-repeat;
+      background-size: 100% 100%;
+    }
+    &_related_data {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        display: inline-block;
+        margin-right: 10px;
+        width: 46px;
+        height: 46px;
+      }
+      p {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+      }
+      .banner_related_data_title {
+        display: inline-block;
+        font-size: 12px;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.8);
+        line-height: 18px;
+      }
+      .banner_related_data_val {
+        display: inline-block;
+        margin-top: 2px;
+        font-size: 20px;
+        font-weight: 500;
+        color: #ffffff;
+        line-height: 20px;
+      }
+      .banner_related_data_buy {
+        display: inline-block;
+        padding: 0 6px;
+        margin: 18px 0 0 8px;
+        height: 20px;
+        font-size: 12px;
+        line-height: 20px;
+        color: #0f8c20;
+        background: #d4e9e2;
+        border-radius: 5px;
+      }
+    }
+    &_address_box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 18px;
+    }
+    &_address {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 24px;
+      color: #7a7f82;
+      text-align: center;
+      &:hover {
+        color: #22292f;
+        svg {
+          fill: #22292f;
+        }
+      }
+      svg {
+        margin-left: 4px;
+        fill: #7a7f82;
+      }
+    }
+    &_address_metaMask {
+      display: flex;
+      align-items: center;
+      margin-left: 16px;
+      padding: 0 10px;
+      height: 32px;
+      font-size: 12px;
+      font-family: PingFangSC-Semibold, PingFang SC;
+      font-weight: 600;
+      color: #0f8c20;
+      line-height: 32px;
+      background: #f2f0eb;
+      border-radius: 24px;
+      &:hover {
+        color: #00b900;
+      }
+      .metaMask_logo {
+        display: inline-block;
+        margin-left: 8px;
+        width: 16px;
+        height: 16px;
+        background: url('../icon/MetaMask_logo@2x.png') no-repeat;
+        background-size: 100% 100%;
+      }
+    }
+  }
+}
+@media #{$mdWidth} {
+  .banner-box {
+    position: relative;
+    padding: 64px 0 58px;
+    width: 100%;
+    min-width: 1080px;
+    background: #fff;
+    background-image: url('../image/weBanner.png');
+    background-repeat: no-repeat;
+    background-size: 100% 520px;
+    background-position: 0 -8px;
+    height: auto;
+  }
+  .banner {
+    width: 1080px;
+    margin: 0 auto;
+    &_text {
+      font-size: 44px;
+      font-weight: 600;
+      color: #22292f;
+      line-height: 62px;
+      margin-top: 50px;
+    }
+    &_text-title {
+      display: none;
+    }
+    &_small_img {
+      display: none;
+    }
+    &_text_img {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &_big_img {
+      width: 400px;
+      height: 200px;
+      border-radius: 10px;
+      border: 1px solid #979797;
+    }
+    &_dec {
+      width: 522px;
+      font-size: 18px;
+      font-weight: 300;
+      color: #7a7f82;
+      line-height: 36px;
+      margin-top: 20px;
+    }
+    &_link {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+      padding-bottom: 30px;
+      span {
+        font-size: 16px;
+        font-family: PTMono-Regular, PTMono !important;
+        font-weight: 400;
+        color: #22292f;
+        line-height: 20px;
+      }
+       .huobi_logo {
+        display: inline-block;
+        background-image: url('../icon/huobi-logo.svg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 168px;
+        height: 20px;
+        margin-right: 20px;
+      }
+      .binance_logo {
+        width: 144px;
+        height: 20px;
+        background-image: url('../icon/binance.svg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+      .polygon_logo {
+        width: 88px;
+        height: 20px;
+        background-image: url('../icon/polygon.svg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+    }
+    &_svg__links {
+      display: flex;
+      margin-bottom: 0;
+      li {
+        margin: 0 10px;
+        height: 24px;
+      }
+
+      a {
+        display: block;
+        width: 24px;
+        svg {
+          fill: #22292f;
+          &:hover {
+            fill: #0f8c20;
+          }
+        }
+        img {
+          width: 18px;
+          height: 24px;
+          &:hover {
+            svg {
+              fill: #0f8c20;
+            }
+          }
+        }
+      }
+    }
+    &_pdf {
+      display: flex;
+      align-items: center;
+      padding: 28px 0;
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 16px;
+        padding: 0 14px;
+        height: 40px;
+        background: #0f8c20;
+        border-radius: 24px;
+        &:hover {
+          background: #00b900;
+        }
+      }
+      .pdf-icon {
+        width: 18px;
+        height: 18px;
+        background: url('../icon/CTK@2x.png') no-repeat;
+        background-size: 100% 100%;
+      }
+      .pdf-text {
+        margin-left: 8px;
+        margin-bottom: 0;
+        font-size: 16px;
+        font-weight: 300;
+        color: #ffffff;
+      }
+      .down-load {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background: url('../icon/folder-download@2x.png') no-repeat;
+        background-size: 100% 100%;
+      }
+    }
+    &_related {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 50px;
+      margin: 0 auto 0;
+      width: 1080px;
+      height: 140px;
+      background: url('../../assets/icon/related_bg@2x.png') no-repeat;
+      background-size: 100% 100%;
+    }
+    &_related_data {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        display: inline-block;
+        margin-right: 10px;
+        width: 46px;
+        height: 46px;
+      }
+      p {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+      }
+      .banner_related_data_title {
+        display: inline-block;
+        font-size: 12px;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.8);
+        line-height: 18px;
+      }
+      .banner_related_data_val {
+        display: inline-block;
+        margin-top: 2px;
+        font-size: 20px;
+        font-weight: 500;
+        color: #ffffff;
+        line-height: 20px;
+      }
+      .banner_related_data_buy {
+        display: inline-block;
+        padding: 0 6px;
+        margin: 18px 0 0 8px;
+        height: 20px;
+        font-size: 12px;
+        line-height: 20px;
+        color: #0f8c20;
+        background: #d4e9e2;
+        border-radius: 5px;
+      }
+    }
+    &_address_box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 18px;
+    }
+    &_address {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 24px;
+      color: #7a7f82;
+      text-align: center;
+      &:hover {
+        color: #22292f;
+        svg {
+          fill: #22292f;
+        }
+      }
+      svg {
+        margin-left: 4px;
+        fill: #7a7f82;
+      }
+    }
+    &_address_metaMask {
+      display: flex;
+      align-items: center;
+      margin-left: 16px;
+      padding: 0 10px;
+      height: 32px;
+      font-size: 12px;
+      font-family: PingFangSC-Semibold, PingFang SC;
+      font-weight: 600;
+      color: #0f8c20;
+      line-height: 32px;
+      background: #f2f0eb;
+      border-radius: 24px;
+      &:hover {
+        color: #00b900;
+      }
+      .metaMask_logo {
+        display: inline-block;
+        margin-left: 8px;
+        width: 16px;
+        height: 16px;
+        background: url('../icon/MetaMask_logo@2x.png') no-repeat;
+        background-size: 100% 100%;
+      }
+    }
+  }
+}
+@media #{$smWidth} {
+  .banner-box {
+    padding-top: 78px;
+    background: #fff;
+  }
+  .banner {
+    width: 100%;
+    padding-bottom: 20px;
+    // padding: 0 15px;
+    &_img {
+      display: none;
+      margin: 0 auto;
+      width: 98%;
+      height: 270px;
+      background-image: url('../image/weBanner_h5.png');
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+    &_text {
+      display: none;
+      font-size: 44px;
+      font-weight: 600;
+      color: #22292f;
+      line-height: 62px;
+      margin-top: 50px;
+    }
+    &_text-title {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding: 12px 22px 16px;
+      width: 100%;
+      background: #d4e9e2;
+      span {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 12px;
+        font-family: PTMono-Regular, PTMono !important;
+        font-weight: 400;
+        color: #22292f;
+      }
+      .huobi_logo {
+        display: inline-block;
+        background-image: url('../icon/huobi-logo.svg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 100px;
+        height: 14px;
+        margin-right: 8px;
+      }
+      .binance_logo {
+        width: 102px;
+        height: 14px;
+        background-image: url('../icon/binance.svg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+      .polygon_logo {
+        width: 62px;
+        height: 14px;
+        background-image: url('../icon/polygon.svg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+    }
+    &_text_img {
+      display: none;
+    }
+    &_dec {
+      display: none;
+      width: auto;
+      font-size: 18px;
+      font-weight: 300;
+      color: #7a7f82;
+      line-height: 36px;
+      margin-top: 20px;
+    }
+    &_link {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+      padding-bottom: 30px;
+      display: none;
+      span {
+        font-size: 20px;
+        font-family: PTMono-Regular, PTMono !important;
+        font-weight: 400;
+        color: #22292f;
+        line-height: 20px;
+      }
+      a {
+        display: inline-block;
+        background-image: url('../icon/huobi-logo.svg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 220px;
+        height: 26px;
+        margin-left: 8px;
+      }
+    }
+    &_svg__links {
+      display: none;
+    }
+    &_small_img {
+      margin: 20px auto 0;
+      width: 350px;
+      height: 140px;
+      border-radius: 10px;
+      border: 1px solid #979797;
+    }
+    &_small_pdf {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 8px;
+        height: 24px;
+        background: #0f8c20;
+        border-radius: 14px;
+        &:hover {
+          background: #00b900;
+        }
+      }
+      .pdf-icon {
+        width: 12px;
+        height: 12px;
+        background: url('../icon/CTK@2x.png') no-repeat;
+        background-size: 100% 100%;
+      }
+      .pdf-text {
+        margin-left: 2px;
+        margin-bottom: 0;
+        font-size: 12px;
+        font-weight: 300;
+        color: #ffffff;
+      }
+      .down-load {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background: url('../icon/folder-download@2x.png') no-repeat;
+        background-size: 100% 100%;
+      }
+    }
+    &_related {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin: 20px auto 0;
+      padding: 24px 10px 24px 30px;
+      width: 350px;
+      height: 280px;
+      background: url('../../assets/icon/related_bg_h5@2x.png') no-repeat;
+      background-size: 100% 100%;
+    }
+    &_related_data {
+      display: flex;
+      align-items: center;
+      img {
+        display: inline-block;
+        margin-right: 10px;
+        width: 46px;
+        height: 46px;
+      }
+      p {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+      }
+      .banner_related_data_title {
+        display: inline-block;
+        font-size: 12px;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.8);
+        line-height: 18px;
+      }
+      .banner_related_data_val {
+        display: inline-block;
+        margin-top: 2px;
+        font-size: 20px;
+        font-weight: 500;
+        color: #ffffff;
+        line-height: 20px;
+      }
+      .banner_related_data_buy {
+        display: inline-block;
+        padding: 0 6px;
+        margin: 18px 0 0 8px;
+        height: 20px;
+        font-size: 12px;
+        line-height: 20px;
+        color: #0f8c20;
+        background: #d4e9e2;
+        border-radius: 5px;
+      }
+    }
+    &_address_box {
+      margin-top: 18px;
+      padding: 0 36px;
+    }
+    &_address {
+      display: inline-block;
+      justify-content: flex-start;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 20px;
+      color: #7a7f82;
+      word-break: break-all;
+      &:hover {
+        color: #22292f;
+        svg {
+          fill: #22292f;
+        }
+      }
+      svg {
+        display: inline-block;
+        margin-left: 4px;
+        fill: #7a7f82;
+        vertical-align: sub;
+      }
+    }
+    &_address_metaMask {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 0 10px;
+      height: 32px;
+      font-size: 12px;
+      font-family: PingFangSC-Semibold, PingFang SC;
+      font-weight: 600;
+      color: #0f8c20;
+      line-height: 32px;
+      background: #f2f0eb;
+      border-radius: 24px;
+      &:hover {
+        color: #00b900;
+      }
+      .metaMask_logo {
+        display: inline-block;
+        margin-left: 8px;
+        width: 16px;
+        height: 16px;
+        background: url('../icon/MetaMask_logo@2x.png') no-repeat;
+        background-size: 100% 100%;
+        vertical-align: sub;
+      }
+    }
+    &_pdf {
+      display: none;
+    }
+  }
+}
+@media #{$xsWidth} {
+  .banner-box {
+    padding-top: 78px;
+    min-width: 350px;
+    background: #fff;
+  }
+  .banner {
+    width: 100%;
+    padding-bottom: 20px;
+    &_img {
+      display: none;
+      // display: block;
+      margin: 0 auto;
+      width: 99%;
+      height: 270px;
+      background-image: url('../image/weBanner_h5.png');
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+    }
+    &_text {
+      display: none;
+      font-size: 44px;
+      font-weight: 600;
+      color: #22292f;
+      line-height: 62px;
+    }
+    &_text-title {
+        display: flex;
+      align-items: center;
+      flex-direction: column;
+      padding: 12px 22px 16px;
+      width: 100%;
+      background: #d4e9e2;
+      span {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 12px;
+        font-family: PTMono-Regular, PTMono !important;
+        font-weight: 400;
+        color: #22292f;
+      }
+      .huobi_logo {
+        display: inline-block;
+        background-image: url('../icon/huobi-logo.svg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 100px;
+        height: 14px;
+        margin-right: 8px;
+      }
+      .binance_logo {
+        width: 102px;
+        height: 14px;
+        background-image: url('../icon/binance.svg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+      .polygon_logo {
+        width: 62px;
+        height: 14px;
+        background-image: url('../icon/polygon.svg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+    }
+    &_text_img {
+      display: none;
+    }
+    &_dec {
+      display: none;
+      width: auto;
+      font-size: 18px;
+      font-weight: 300;
+      color: #7a7f82;
+      line-height: 36px;
+      margin-top: 20px;
+    }
+    &_link {
+      display: flex;
+      align-items: center;
+      margin-top: 20px;
+      padding-bottom: 30px;
+      display: none;
+      span {
+        font-size: 20px;
+        font-family: PTMono-Regular, PTMono !important;
+        font-weight: 400;
+        color: #22292f;
+        line-height: 20px;
+      }
+      a {
+        display: inline-block;
+        background-image: url('../icon/huobi-logo.svg');
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        width: 220px;
+        height: 26px;
+        margin-left: 8px;
+      }
+    }
+    &_svg__links {
+      display: none;
+    }
+    &_small_img {
+      margin: 20px auto 0;
+      width: 350px;
+      height: 140px;
+      border-radius: 10px;
+      border: 1px solid #979797;
+    }
+    &_small_pdf {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 8px;
+        height: 24px;
+        background: #0f8c20;
+        border-radius: 14px;
+        &:hover {
+          background: #00b900;
+        }
+      }
+      .pdf-icon {
+        width: 12px;
+        height: 12px;
+        background: url('../icon/CTK@2x.png') no-repeat;
+        background-size: 100% 100%;
+      }
+      .pdf-text {
+        margin-left: 2px;
+        margin-bottom: 0;
+        font-size: 12px;
+        font-weight: 300;
+        color: #ffffff;
+      }
+      .down-load {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        background: url('../icon/folder-download@2x.png') no-repeat;
+        background-size: 100% 100%;
+      }
+    }
+    &_pdf {
+      display: none;
+    }
+    &_related {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin: 20px auto 0;
+      padding: 24px 10px 24px 30px;
+      width: 350px;
+      height: 280px;
+      background: url('../../assets/icon/related_bg_h5@2x.png') no-repeat;
+      background-size: 100% 100%;
+    }
+    &_related_data {
+      display: flex;
+      align-items: center;
+      img {
+        display: inline-block;
+        margin-right: 10px;
+        width: 46px;
+        height: 46px;
+      }
+      p {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0;
+      }
+      .banner_related_data_title {
+        display: inline-block;
+        font-size: 12px;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.8);
+        line-height: 18px;
+      }
+      .banner_related_data_val {
+        display: inline-block;
+        margin-top: 2px;
+        font-size: 20px;
+        font-weight: 500;
+        color: #ffffff;
+        line-height: 20px;
+      }
+      .banner_related_data_buy {
+        display: inline-block;
+        padding: 0 6px;
+        margin: 18px 0 0 8px;
+        height: 20px;
+        font-size: 12px;
+        line-height: 20px;
+        color: #0f8c20;
+        background: #d4e9e2;
+        border-radius: 5px;
+      }
+    }
+    &_address_box {
+      margin-top: 18px;
+      padding: 0 36px;
+    }
+    &_address {
+      display: inline-block;
+      justify-content: flex-start;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 20px;
+      color: #7a7f82;
+      word-break: break-all;
+      &:hover {
+        color: #22292f;
+        svg {
+          fill: #22292f;
+        }
+      }
+      svg {
+        display: inline-block;
+        margin-left: 4px;
+        fill: #7a7f82;
+        vertical-align: sub;
+      }
+    }
+    &_address_metaMask {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 0 10px;
+      height: 32px;
+      font-size: 12px;
+      font-family: PingFangSC-Semibold, PingFang SC;
+      font-weight: 600;
+      color: #0f8c20;
+      line-height: 32px;
+      background: #f2f0eb;
+      border-radius: 24px;
+      &:hover {
+        color: #00b900;
+      }
+      .metaMask_logo {
+        display: inline-block;
+        margin-left: 8px;
+        width: 16px;
+        height: 16px;
+        background: url('../icon/MetaMask_logo@2x.png') no-repeat;
+        background-size: 100% 100%;
+        vertical-align: sub;
+      }
+    }
+  }
+}

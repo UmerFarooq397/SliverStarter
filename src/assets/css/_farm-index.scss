@@ -1,0 +1,1766 @@
+.farm_pools_card_access{
+  display: flex;
+  padding: 10px 0;
+  .farm_pools_card_access_title{
+    color: #7A7F82;
+    line-height: 24px;
+    font-size: 14px;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+  }
+  .farm_pools_card_access_content{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    font-weight: bold;
+    img{
+      width: 24px;
+      height: 24px;
+    }
+    .access-type-text{
+      margin: 0 5px 0 6px;
+    }
+    .tips{
+      position: relative;
+      img{
+        width: 20px;
+        height: 20px;
+      }
+      .tips_content {
+        position: absolute;
+        z-index: 99;
+        bottom: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 0 10px;
+        margin-top: 0 !important;
+        height: 24px;
+        font-style: normal;
+        font-size: 12px;
+        color: #22292f;
+        line-height: 24px !important;
+        background: #e1dfd9;
+        border-radius: 3px;
+        white-space: nowrap;
+        font-weight: 400;
+        &::after {
+          content: '';
+          display: inline-block;
+          position: absolute;
+          bottom: -5px;
+          left: 50%;
+          transform: translateX(-50%);
+          width: 0;
+          height: 0;
+          border-top: 7px solid #e1dfd9;
+          border-left: 7px solid transparent;
+          border-right: 7px solid transparent;
+        }
+        display: none;
+      }
+      &:hover .tips_content{
+        display: block;
+      }
+    }
+  }
+}
+.farm_pools_card_award-nft{
+  &>div{
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    .nft-img{
+      width: 48px;
+      height: 48px;
+    }
+  }
+  .desc{
+    font-size: 12px;
+    font-family: Montserrat-Regular, Montserrat;
+    font-weight: 400;
+    color: #162040;
+    line-height: 20px;
+  }
+}
+.tips-icon{
+  width: 22px;
+  height: 22px;
+  margin-left: 4px;
+  cursor: pointer;
+}
+.farm_index{
+  display: flex;
+  flex-wrap: wrap;
+}
+@media #{$desktop} {
+  .farm_box {
+    min-width: 1080px;
+    background: #fff;
+    height: 100%;
+    .farm_box_main {
+      min-height: calc(100% - 80px);
+    }
+    .footer {
+      position: relative;
+    }
+  }
+  .farm_index {
+    position: relative;
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+    margin: 74px auto 112px;
+    width: 1080px;
+    &_card {
+      position: relative;
+      display: inline-block;
+      margin-top: 30px;
+      padding: 42px 30px 15px;
+      margin-top: 30px;
+      width: 335px;
+      //height: 476px;
+      background: #e0f8e3;
+      border-radius: 20px;
+      vertical-align: top;
+      &:nth-child(3n-1) {
+        margin: 30px 30px 0;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        top: -22px;
+        left: 26px;
+        width: 82px;
+        height: 50px;
+        background: url('../icon/farm/WAR-HT@2x.png') no-repeat;
+        background-size: 100% 100%;
+      }
+      .farm_index_card_chainId_content {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 60px;
+        height: 60px;
+        border-top-right-radius: 20px;
+        overflow: hidden;
+      }
+      .farm_index_card_chainId_box {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        z-index: 0;
+        width: 0;
+        height: 0;
+        border-top: 62px solid #c5eecb;
+        border-bottom: 62px solid transparent;
+        border-left: 62px solid transparent;
+        .farm_index_card_chainId {
+          position: absolute;
+          right: 6px;
+          bottom: 30px;
+          z-index: 1;
+          width: 20px !important;
+          height: 20px !important;
+          background: url('../../assets/icon/HECO@2x.png') no-repeat;
+          background-size: 100% 100%;
+        }
+      }
+    }
+    &_card_56 {
+      background: #fff8e0;
+      .farm_index_card_chainId_box {
+        border-top: 62px solid #ffeeb9;
+        border-bottom: 62px solid transparent;
+        border-left: 62px solid transparent;
+        .farm_index_card_chainId {
+          background: url('../../assets/icon/BSC@2x.png') no-repeat;
+          background-size: 100% 100%;
+        }
+      }
+    }
+    &_card_137 {
+      background: #f7f2ff;
+      .farm_index_card_chainId_box {
+        border-top: 62px solid #e1cfff;
+        border-bottom: 62px solid transparent;
+        border-left: 62px solid transparent;
+        .farm_index_card_chainId {
+          background: url('../../assets/icon/MATIC@2x.png') no-repeat;
+          background-size: 100% 100%;
+        }
+      }
+    }
+    .PAUL-USDT:after {
+      background: url('../icon/farm/PAUL-HT@2x.png') no-repeat;
+      background-size: 100% 100%;
+    }
+    .WAR:after {
+      width: 50px;
+      background: url('../icon/WAR@2x.png') no-repeat;
+      background-size: 100% 100%;
+    }
+    .PLUT:after {
+      width: 50px;
+      background: url('../icon/PLUT.png') no-repeat;
+      background-size: 100% 100%;
+    }
+    .WAR-BUSD:after {
+      background: url('../icon/farm/WAR_BUSD.png') no-repeat;
+      background-size: 100% 100%;
+    }
+    .WAR-USDT:after {
+      background: url('../icon/farm/WAR-USDT@2x.png') no-repeat;
+      background-size: 100% 100%;
+    }
+    .xNFT:after {
+      background: url('../icon/farm/X_NFT.png') no-repeat;
+      background-size: 50px 50px;
+    }
+    &_coming {
+      background: #f2f0eb;
+      &:after {
+        content: '';
+        position: absolute;
+        top: -22px;
+        left: 26px;
+        width: 50px;
+        height: 50px;
+        background: url('../icon/farm/coming@2x.png') no-repeat;
+        background-size: 100% 100%;
+      }
+      .farm_index_card_value {
+        img {
+          display: inline-block;
+          width: 24px !important;
+          height: 24px !important;
+        }
+      }
+    }
+    &_card_title {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0;
+      font-size: 20px;
+      font-family: HelveticaNeue-Bold, HelveticaNeue;
+      color: #0f8c20;
+      line-height: 26px;
+    }
+    .svip {
+      display: inline-block;
+      margin-left: 4px;
+      width: 34px;
+      height: 18px;
+      background: url('../icon/farm/SVIP@2x.png') no-repeat;
+      background-size: 100% 100%;
+    }
+    &_card_title_56 {
+      color: #f0b90b;
+    }
+    &_card_title_137 {
+      color: #8247e5;
+    }
+    &_card_content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+      border-bottom: 1px solid #b3d7cb;
+      .apr,
+      .countdown {
+        margin-top: 8px;
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        font-family: HelveticaNeue-Bold, HelveticaNeue;
+        font-weight: bold;
+        color: #22292f;
+        line-height: 18px;
+      }
+      .countdown_time {
+        display: inline-block;
+        padding: 0 6px;
+        background: #c5e5c9;
+        border-radius: 3px;
+      }
+      .countdown_time_56 {
+        background: #ffeeb9;
+      }
+      .countdown_time_137 {
+        background: #e1cfff;
+      }
+      .content_name {
+        margin: 8px 0;
+        font-size: 12px;
+        font-family: HelveticaNeue;
+        color: #7a7f82;
+        line-height: 16px;
+        .tips {
+          position: relative;
+          margin-left: 2px;
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          vertical-align: sub;
+          cursor: pointer;
+          svg {
+            fill: #c5e5c9;
+          }
+        }
+        .tips_56 {
+          svg {
+            fill: #ffeeb9;
+          }
+        }
+        .tips_137 {
+          svg {
+            fill: #e1cfff;
+          }
+        }
+        .tips_content {
+          position: absolute;
+          bottom: 50%;
+          transform: translateY(50%);
+          left: 22px;
+          padding: 0 10px;
+          margin-top: 0 !important;
+          height: 24px;
+          font-style: normal;
+          font-size: 12px;
+          color: #22292f;
+          line-height: 24px !important;
+          background: #c5e5c9;
+          border-radius: 3px;
+          white-space: nowrap;
+          &::after {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            left: -5px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-top: 7px solid transparent;
+            border-bottom: 7px solid transparent;
+            border-right: 7px solid #c5e5c9;
+          }
+        }
+        .tips_content_56 {
+          background: #ffeeb9;
+          &::after {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            left: -5px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-top: 7px solid transparent;
+            border-bottom: 7px solid transparent;
+            border-right: 7px solid #ffeeb9;
+          }
+        }
+        .tips_content_137 {
+          background: #e1cfff;
+          &::after {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            left: -5px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-top: 7px solid transparent;
+            border-bottom: 7px solid transparent;
+            border-right: 7px solid #e1cfff;
+          }
+        }
+      }
+    }
+    &_card_value {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0;
+      font-size: 14px;
+      font-family: HelveticaNeue;
+      color: #7a7f82;
+      line-height: 28px;
+      img {
+        display: inline-block;
+        //width: 36px;
+        height: 22px;
+      }
+      span {
+        font-size: 14px;
+        font-family: HelveticaNeue;
+        color: #121212;
+        line-height: 28px;
+      }
+    }
+    &_card_getMLP {
+      margin-bottom: 0;
+      font-size: 14px;
+      line-height: 26px;
+      font-family: IBMPlexSans;
+      font-weight: 600;
+      color: #0f8c20;
+      text-decoration: underline;
+      &:hover {
+        color: #00b900;
+        text-decoration: underline;
+      }
+    }
+    &_card_getMLP_56 {
+      color: #f0b90b;
+      &:hover {
+        color: #f3c73b;
+        text-decoration: underline;
+      }
+    }
+    &_card_getMLP_137 {
+      color: #8247e5;
+      &:hover {
+        color: #9b6bea;
+        text-decoration: underline;
+      }
+    }
+    &_card_btn {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 8px;
+      width: 100%;
+    }
+    .deposit_btn,
+    .claim_btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 130px;
+      height: 40px;
+      // line-height: 40px;
+      font-size: 14px;
+      font-family: HelveticaNeue-Medium, HelveticaNeue;
+      font-weight: 500;
+      color: #ffffff;
+      background: #0f8c20;
+      box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+      border-radius: 24px;
+      border: 0;
+      text-align: center;
+      &:hover {
+        background-color: #00b900;
+      }
+      &.disabled {
+        background-color: #b6b9bc;
+        &:hover {
+          background-color: #b6b9bc;
+          color: #ffffff;
+        }
+      }
+    }
+    .deposit_btn_56 {
+      background: #f0b90b;
+      box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+      &:hover {
+        background-color: #f3c73b;
+      }
+    }
+    .deposit_btn_137 {
+      background: #8247e5;
+      box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+      &:hover {
+        background-color: #9b6bea;
+      }
+    }
+    .claim_btn {
+      background: #121212;
+      box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+      border-radius: 24px;
+      &:hover {
+        background-color: #22292f;
+      }
+    }
+    .disable_btn {
+      background: #b6b9bc !important;
+      box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1) !important;
+      &:hover {
+        background: #b6b9bc !important;
+        box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1) !important;
+      }
+    }
+    &_card_rewards {
+      margin-top: 12px;
+      padding: 8px 10px;
+      background: #c5e5c9;
+      border-radius: 5px;
+    }
+    &_card_rewards_56 {
+      background: #ffeeb9;
+    }
+    &_card_rewards_137 {
+      background: #e1cfff;
+    }
+  }
+  .farm_popup_avaliable {
+    margin-top: 0;
+    line-height: 24px !important;
+  }
+  .vip_tip {
+    margin: 8px 0 0;
+    font-size: 12px;
+    font-family: HelveticaNeue;
+    color: #7A7F82;
+  }
+}
+@media #{$mdWidth} {
+  .farm_box {
+    min-width: 1080px;
+    background: #fff;
+  }
+  .farm_index {
+    position: relative;
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+    margin: 74px auto 0;
+    padding-bottom: 112px;
+    width: 1080px;
+    &_card {
+      position: relative;
+      display: inline-block;
+      margin-top: 30px;
+      padding: 42px 30px 15px;
+      margin-top: 30px;
+      width: 335px;
+      //height: 476px;
+      background: #e0f8e3;
+      border-radius: 20px;
+      vertical-align: top;
+      &:nth-child(3n-1) {
+        margin: 30px 30px 0;
+      }
+      &:after {
+        content: '';
+        position: absolute;
+        top: -22px;
+        left: 26px;
+        width: 82px;
+        height: 50px;
+        background: url('../icon/farm/WAR-HT@2x.png') no-repeat;
+        background-size: 100% 100%;
+      }
+      .farm_index_card_chainId_content {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 60px;
+        height: 60px;
+        border-top-right-radius: 20px;
+        overflow: hidden;
+      }
+      .farm_index_card_chainId_box {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        z-index: 0;
+        width: 0;
+        height: 0;
+        border-top: 62px solid #c5eecb;
+        border-bottom: 62px solid transparent;
+        border-left: 62px solid transparent;
+        .farm_index_card_chainId {
+          position: absolute;
+          right: 6px;
+          bottom: 30px;
+          z-index: 1;
+          width: 20px !important;
+          height: 20px !important;
+          background: url('../../assets/icon/HECO@2x.png') no-repeat;
+          background-size: 100% 100%;
+        }
+      }
+    }
+    &_card_56 {
+      background: #fff8e0;
+      .farm_index_card_chainId_box {
+        border-top: 62px solid #ffeeb9;
+        border-bottom: 62px solid transparent;
+        border-left: 62px solid transparent;
+        .farm_index_card_chainId {
+          background: url('../../assets/icon/BSC@2x.png') no-repeat;
+          background-size: 100% 100%;
+        }
+      }
+    }
+    &_card_137 {
+      background: #f7f2ff;
+      .farm_index_card_chainId_box {
+        border-top: 62px solid #e1cfff;
+        border-bottom: 62px solid transparent;
+        border-left: 62px solid transparent;
+        .farm_index_card_chainId {
+          background: url('../../assets/icon/MATIC@2x.png') no-repeat;
+          background-size: 100% 100%;
+        }
+      }
+    }
+    .PAUL-USDT:after {
+      background: url('../icon/farm/PAUL-HT@2x.png') no-repeat;
+      background-size: 100% 100%;
+    }
+    .WAR:after {
+      width: 50px;
+      background: url('../icon/WAR@2x.png') no-repeat;
+      background-size: 100% 100%;
+    }
+    .PLUT:after {
+      width: 50px;
+      background: url('../icon/PLUT.png') no-repeat;
+      background-size: 100% 100%;
+    }
+    .WAR-BUSD:after {
+      background: url('../icon/farm/WAR_BUSD.png') no-repeat;
+      background-size: 100% 100%;
+    }
+    .WAR-USDT:after {
+      background: url('../icon/farm/WAR-USDT@2x.png') no-repeat;
+      background-size: 100% 100%;
+    }
+    .xNFT:after {
+      background: url('../icon/farm/X_NFT.png') no-repeat;
+      background-size: 50px 50px;
+    }
+    &_coming {
+      background: #f2f0eb;
+      &:after {
+        content: '';
+        position: absolute;
+        top: -22px;
+        left: 26px;
+        width: 50px;
+        height: 50px;
+        background: url('../icon/farm/coming@2x.png') no-repeat;
+        background-size: 100% 100%;
+      }
+      .farm_index_card_value {
+        img {
+          display: inline-block;
+          width: 24px !important;
+          height: 24px !important;
+        }
+      }
+    }
+    &_card_title {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0;
+      font-size: 20px;
+      font-family: HelveticaNeue-Bold, HelveticaNeue;
+      color: #0f8c20;
+      line-height: 26px;
+    }
+    .svip {
+      display: inline-block;
+      margin-left: 4px;
+      width: 34px;
+      height: 18px;
+      background: url('../icon/farm/SVIP@2x.png') no-repeat;
+      background-size: 100% 100%;
+    }
+    &_card_title_56 {
+      color: #f0b90b;
+    }
+    &_card_title_137 {
+      color: #8247e5;
+    }
+    &_card_content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+      border-bottom: 1px solid #b3d7cb;
+      .apr,
+      .countdown {
+        margin-top: 8px;
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        font-family: HelveticaNeue-Bold, HelveticaNeue;
+        font-weight: bold;
+        color: #22292f;
+        line-height: 18px;
+      }
+      .countdown_time {
+        display: inline-block;
+        padding: 0 6px;
+        background: #c5e5c9;
+        border-radius: 3px;
+      }
+      .countdown_time_56 {
+        background: #ffeeb9;
+      }
+      .countdown_time_137 {
+        background: #e1cfff;
+      }
+      .content_name {
+        margin: 8px 0;
+        font-size: 12px;
+        font-family: HelveticaNeue;
+        color: #7a7f82;
+        line-height: 16px;
+        .tips {
+          position: relative;
+          margin-left: 2px;
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          vertical-align: sub;
+          cursor: pointer;
+          svg {
+            fill: #c5e5c9;
+          }
+        }
+        .tips_56 {
+          svg {
+            fill: #ffeeb9;
+          }
+        }
+        .tips_137 {
+          svg {
+            fill: #e1cfff;
+          }
+        }
+        .tips_content {
+          position: absolute;
+          bottom: 50%;
+          transform: translateY(50%);
+          left: 22px;
+          padding: 0 10px;
+          margin-top: 0 !important;
+          height: 24px;
+          font-style: normal;
+          font-size: 12px;
+          color: #22292f;
+          line-height: 24px !important;
+          background: #c5e5c9;
+          border-radius: 3px;
+          white-space: nowrap;
+          &::after {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            left: -5px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-top: 7px solid transparent;
+            border-bottom: 7px solid transparent;
+            border-right: 7px solid #c5e5c9;
+          }
+        }
+        .tips_content_56 {
+          background: #ffeeb9;
+          &::after {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            left: -5px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-top: 7px solid transparent;
+            border-bottom: 7px solid transparent;
+            border-right: 7px solid #ffeeb9;
+          }
+        }
+        .tips_content_137 {
+          background: #e1cfff;
+          &::after {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            left: -5px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-top: 7px solid transparent;
+            border-bottom: 7px solid transparent;
+            border-right: 7px solid #e1cfff;
+          }
+        }
+      }
+    }
+    &_card_value {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0;
+      font-size: 14px;
+      font-family: HelveticaNeue;
+      color: #7a7f82;
+      line-height: 28px;
+      img {
+        display: inline-block;
+        //width: 36px;
+        height: 22px;
+      }
+      span {
+        font-size: 14px;
+        font-family: HelveticaNeue;
+        color: #121212;
+        line-height: 28px;
+      }
+    }
+    &_card_getMLP {
+      margin-bottom: 0;
+      font-size: 14px;
+      line-height: 26px;
+      font-family: IBMPlexSans;
+      font-weight: 600;
+      color: #0f8c20;
+      text-decoration: underline;
+      &:hover {
+        color: #00b900;
+        text-decoration: underline;
+      }
+    }
+    &_card_getMLP_56 {
+      color: #f0b90b;
+      &:hover {
+        color: #f3c73b;
+        text-decoration: underline;
+      }
+    }
+    &_card_getMLP_137 {
+      color: #8247e5;
+      &:hover {
+        color: #9b6bea;
+        text-decoration: underline;
+      }
+    }
+    &_card_btn {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 8px;
+      width: 100%;
+    }
+    .deposit_btn,
+    .claim_btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 130px;
+      height: 40px;
+      // line-height: 40px;
+      font-size: 14px;
+      font-family: HelveticaNeue-Medium, HelveticaNeue;
+      font-weight: 500;
+      color: #ffffff;
+      background: #0f8c20;
+      box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+      border-radius: 24px;
+      text-align: center;
+      border: 0;
+      &:hover {
+        background-color: #00b900;
+      }
+      &.disabled {
+        background-color: #b6b9bc;
+        &:hover {
+          background-color: #b6b9bc;
+          color: #ffffff;
+        }
+      }
+    }
+    .deposit_btn_56 {
+      background: #f0b90b;
+      box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+      &:hover {
+        background-color: #f3c73b;
+      }
+    }
+    .deposit_btn_137 {
+      background: #8247e5;
+      box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+      &:hover {
+        background-color: #9b6bea;
+      }
+    }
+    .claim_btn {
+      background: #121212;
+      box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+      border-radius: 24px;
+      &:hover {
+        background-color: #22292f;
+      }
+    }
+    .disable_btn {
+      background: #b6b9bc !important;
+      box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1) !important;
+      &:hover {
+        background: #b6b9bc !important;
+        box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1) !important;
+      }
+    }
+    &_card_rewards {
+      margin-top: 12px;
+      padding: 8px 10px;
+      background: #c5e5c9;
+      border-radius: 5px;
+    }
+    &_card_rewards_56 {
+      background: #ffeeb9;
+    }
+    &_card_rewards_137 {
+      background: #e1cfff;
+    }
+  }
+  .farm_popup_avaliable {
+    margin-top: 0;
+    line-height: 24px !important;
+  }
+  .vip_tip {
+    margin: 8px 0 0;
+    font-size: 12px;
+    font-family: HelveticaNeue;
+    color: #7A7F82;
+  }
+}
+@media #{$smWidth} {
+  .farm_box {
+    min-width: 350px;
+    background: #fff;
+  }
+  .farm_index {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    width: 100%;
+    &_card {
+      position: relative;
+      padding: 42px 30px 15px;
+      margin-top: 44px;
+      width: 335px;
+      //height: 476px;
+      background: #e0f8e3;
+      border-radius: 20px;
+      &:after {
+        content: '';
+        position: absolute;
+        top: -22px;
+        left: 26px;
+        width: 82px;
+        height: 50px;
+        background: url('../icon/farm/WAR-HT@2x.png') no-repeat;
+        background-size: 100% 100%;
+      }
+      .farm_index_card_chainId_content {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 60px;
+        height: 60px;
+        border-top-right-radius: 20px;
+        overflow: hidden;
+      }
+      .farm_index_card_chainId_box {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        z-index: 0;
+        width: 0;
+        height: 0;
+        border-top: 62px solid #c5eecb;
+        border-bottom: 62px solid transparent;
+        border-left: 62px solid transparent;
+        .farm_index_card_chainId {
+          position: absolute;
+          right: 6px;
+          bottom: 30px;
+          z-index: 1;
+          width: 20px !important;
+          height: 20px !important;
+          background: url('../../assets/icon/HECO@2x.png') no-repeat;
+          background-size: 100% 100%;
+        }
+      }
+    }
+    &_card_56 {
+      background: #fff8e0;
+      .farm_index_card_chainId_box {
+        border-top: 62px solid #ffeeb9;
+        border-bottom: 62px solid transparent;
+        border-left: 62px solid transparent;
+        .farm_index_card_chainId {
+          background: url('../../assets/icon/BSC@2x.png') no-repeat;
+          background-size: 100% 100%;
+        }
+      }
+    }
+    &_card_137 {
+      background: #f7f2ff;
+      .farm_index_card_chainId_box {
+        border-top: 62px solid #e1cfff;
+        border-bottom: 62px solid transparent;
+        border-left: 62px solid transparent;
+        .farm_index_card_chainId {
+          background: url('../../assets/icon/MATIC@2x.png') no-repeat;
+          background-size: 100% 100%;
+        }
+      }
+    }
+    .PAUL-USDT:after {
+      background: url('../icon/farm/PAUL-HT@2x.png') no-repeat;
+      background-size: 100% 100%;
+    }
+    .WAR:after {
+      width: 50px;
+      background: url('../icon/WAR@2x.png') no-repeat;
+      background-size: 100% 100%;
+    }
+    .PLUT:after {
+      width: 50px;
+      background: url('../icon/PLUT.png') no-repeat;
+      background-size: 100% 100%;
+    }
+    .WAR-BUSD:after {
+      background: url('../icon/farm/WAR_BUSD.png') no-repeat;
+      background-size: 100% 100%;
+    }
+    .WAR-USDT:after {
+      background: url('../icon/farm/WAR-USDT@2x.png') no-repeat;
+      background-size: 100% 100%;
+    }
+    .xNFT:after {
+      background: url('../icon/farm/X_NFT.png') no-repeat;
+      background-size: 50px 50px;
+    }
+    &_coming {
+      background: #f2f0eb;
+      &:after {
+        content: '';
+        position: absolute;
+        top: -22px;
+        left: 26px;
+        width: 50px;
+        height: 50px;
+        background: url('../icon/farm/coming@2x.png') no-repeat;
+        background-size: 100% 100%;
+      }
+      .farm_index_card_value {
+        img {
+          display: inline-block;
+          width: 24px !important;
+          height: 24px !important;
+        }
+      }
+    }
+    &_card_title {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0;
+      font-size: 20px;
+      font-family: HelveticaNeue-Bold, HelveticaNeue;
+      color: #0f8c20;
+      line-height: 26px;
+    }
+    .svip {
+      display: inline-block;
+      margin-left: 4px;
+      width: 34px;
+      height: 18px;
+      background: url('../icon/farm/SVIP@2x.png') no-repeat;
+      background-size: 100% 100%;
+    }
+    &_card_title_56 {
+      color: #f0b90b;
+    }
+    &_card_title_137 {
+      color: #8247e5;
+    }
+    &_card_content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+      border-bottom: 1px solid #b3d7cb;
+      .apr,
+      .countdown {
+        margin-top: 8px;
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        font-family: HelveticaNeue-Bold, HelveticaNeue;
+        font-weight: bold;
+        color: #22292f;
+        line-height: 18px;
+      }
+      .countdown_time {
+        display: inline-block;
+        padding: 0 6px;
+        background: #c5e5c9;
+        border-radius: 3px;
+      }
+      .countdown_time_56 {
+        background: #ffeeb9;
+      }
+      .countdown_time_137 {
+        background: #e1cfff;
+      }
+      .content_name {
+        margin: 8px 0;
+        font-size: 12px;
+        font-family: HelveticaNeue;
+        color: #7a7f82;
+        line-height: 16px;
+        .tips {
+          position: relative;
+          margin-left: 2px;
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          vertical-align: sub;
+          cursor: pointer;
+          svg {
+            fill: #c5e5c9;
+          }
+        }
+        .tips_56 {
+          svg {
+            fill: #ffeeb9;
+          }
+        }
+        .tips_137 {
+          svg {
+            fill: #e1cfff;
+          }
+        }
+        .tips_content {
+          position: absolute;
+          bottom: 50%;
+          transform: translateY(50%);
+          left: 22px;
+          padding: 0 10px;
+          margin-top: 0 !important;
+          height: 24px;
+          font-style: normal;
+          font-size: 12px;
+          color: #22292f;
+          line-height: 24px !important;
+          background: #c5e5c9;
+          border-radius: 3px;
+          white-space: nowrap;
+          &::after {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            left: -5px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-top: 7px solid transparent;
+            border-bottom: 7px solid transparent;
+            border-right: 7px solid #c5e5c9;
+          }
+        }
+        .tips_content_56 {
+          background: #ffeeb9;
+          &::after {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            left: -5px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-top: 7px solid transparent;
+            border-bottom: 7px solid transparent;
+            border-right: 7px solid #ffeeb9;
+          }
+        }
+        .tips_content_137 {
+          background: #e1cfff;
+          &::after {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            left: -5px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-top: 7px solid transparent;
+            border-bottom: 7px solid transparent;
+            border-right: 7px solid #e1cfff;
+          }
+        }
+      }
+    }
+    &_card_value {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0;
+      font-size: 14px;
+      font-family: HelveticaNeue;
+      color: #7a7f82;
+      line-height: 28px;
+      img {
+        display: inline-block;
+        //width: 36px;
+        height: 22px;
+      }
+      span {
+        font-size: 14px;
+        font-family: HelveticaNeue;
+        color: #121212;
+        line-height: 28px;
+      }
+    }
+    &_card_getMLP {
+      margin-bottom: 0;
+      font-size: 14px;
+      line-height: 26px;
+      font-family: IBMPlexSans;
+      font-weight: 600;
+      color: #0f8c20;
+      text-decoration: underline;
+      &:hover {
+        color: #00b900;
+        text-decoration: underline;
+      }
+    }
+    &_card_getMLP_56 {
+      color: #f0b90b;
+      &:hover {
+        color: #f3c73b;
+        text-decoration: underline;
+      }
+    }
+    &_card_getMLP_137 {
+      color: #8247e5;
+      &:hover {
+        color: #9b6bea;
+        text-decoration: underline;
+      }
+    }
+    &_card_btn {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 8px;
+      width: 100%;
+    }
+    .deposit_btn,
+    .claim_btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 130px;
+      height: 40px;
+      // line-height: 40px;
+      font-size: 14px;
+      font-family: HelveticaNeue-Medium, HelveticaNeue;
+      font-weight: 500;
+      color: #ffffff;
+      background: #0f8c20;
+      box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+      border-radius: 24px;
+      text-align: center;
+      border: 0;
+      &:hover {
+        background-color: #00b900;
+      }
+      &.disabled {
+        background-color: #b6b9bc;
+        &:hover {
+          background-color: #b6b9bc;
+          color: #ffffff;
+        }
+      }
+    }
+    .deposit_btn_56 {
+      background: #f0b90b;
+      box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+      &:hover {
+        background-color: #f3c73b;
+      }
+    }
+    .deposit_btn_137 {
+      background: #8247e5;
+      box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+      &:hover {
+        background-color: #9b6bea;
+      }
+    }
+    .claim_btn {
+      background: #121212;
+      box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+      border-radius: 24px;
+      &:hover {
+        background-color: #22292f;
+      }
+    }
+    .disable_btn {
+      background: #b6b9bc !important;
+      box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1) !important;
+      &:hover {
+        background: #b6b9bc !important;
+        box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1) !important;
+      }
+    }
+    &_card_rewards {
+      margin-top: 12px;
+      padding: 8px 10px;
+      background: #c5e5c9;
+      border-radius: 5px;
+    }
+    &_card_rewards_56 {
+      background: #ffeeb9;
+    }
+    &_card_rewards_137 {
+      background: #e1cfff;
+    }
+  }
+  .farm_popup_avaliable {
+    margin-top: 0;
+    line-height: 24px !important;
+  }
+  .vip_tip {
+    margin: 8px 0 0;
+    font-size: 12px;
+    font-family: HelveticaNeue;
+    color: #7A7F82;
+  }
+}
+@media #{$xsWidth} {
+  .farm_box {
+    min-width: 350px;
+    background: #fff;
+  }
+  .farm_index {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    width: 100%;
+    &_card {
+      position: relative;
+      padding: 42px 30px 15px;
+      margin-top: 44px;
+      width: 335px;
+      //height: 476px;
+      background: #e0f8e3;
+      border-radius: 20px;
+      &:after {
+        content: '';
+        position: absolute;
+        top: -22px;
+        left: 26px;
+        width: 82px;
+        height: 50px;
+        background: url('../icon/farm/WAR-HT@2x.png') no-repeat;
+        background-size: 100% 100%;
+      }
+      .farm_index_card_chainId_content {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 60px;
+        height: 60px;
+        border-top-right-radius: 20px;
+        overflow: hidden;
+      }
+      .farm_index_card_chainId_box {
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        z-index: 0;
+        width: 0;
+        height: 0;
+        border-top: 62px solid #c5eecb;
+        border-bottom: 62px solid transparent;
+        border-left: 62px solid transparent;
+        .farm_index_card_chainId {
+          position: absolute;
+          right: 6px;
+          bottom: 30px;
+          z-index: 1;
+          width: 20px !important;
+          height: 20px !important;
+          background: url('../../assets/icon/HECO@2x.png') no-repeat;
+          background-size: 100% 100%;
+        }
+      }
+    }
+    &_card_56 {
+      background: #fff8e0;
+      .farm_index_card_chainId_box {
+        border-top: 62px solid #ffeeb9;
+        border-bottom: 62px solid transparent;
+        border-left: 62px solid transparent;
+        .farm_index_card_chainId {
+          background: url('../../assets/icon/BSC@2x.png') no-repeat;
+          background-size: 100% 100%;
+        }
+      }
+    }
+    &_card_137 {
+      background: #f7f2ff;
+      .farm_index_card_chainId_box {
+        border-top: 62px solid #e1cfff;
+        border-bottom: 62px solid transparent;
+        border-left: 62px solid transparent;
+        .farm_index_card_chainId {
+          background: url('../../assets/icon/MATIC@2x.png') no-repeat;
+          background-size: 100% 100%;
+        }
+      }
+    }
+    .PAUL-USDT:after {
+      background: url('../icon/farm/PAUL-HT@2x.png') no-repeat;
+      background-size: 100% 100%;
+    }
+    .WAR:after {
+      width: 50px;
+      background: url('../icon/WAR@2x.png') no-repeat;
+      background-size: 100% 100%;
+    }
+    .PLUT:after {
+      width: 50px;
+      background: url('../icon/PLUT.png') no-repeat;
+      background-size: 100% 100%;
+    }
+    .WAR-BUSD:after {
+      background: url('../icon/farm/WAR_BUSD.png') no-repeat;
+      background-size: 100% 100%;
+    }
+    .WAR-USDT:after {
+      background: url('../icon/farm/WAR-USDT@2x.png') no-repeat;
+      background-size: 100% 100%;
+    }
+    .xNFT:after {
+      background: url('../icon/farm/X_NFT.png') no-repeat;
+      background-size: 50px 50px;
+    }
+    &_coming {
+      background: #f2f0eb;
+      &:after {
+        content: '';
+        position: absolute;
+        top: -22px;
+        left: 26px;
+        width: 50px;
+        height: 50px;
+        background: url('../icon/farm/coming@2x.png') no-repeat;
+        background-size: 100% 100%;
+      }
+      .farm_index_card_value {
+        img {
+          display: inline-block;
+          width: 24px !important;
+          height: 24px !important;
+        }
+      }
+    }
+    &_card_title {
+      display: flex;
+      align-items: center;
+      margin-bottom: 0;
+      font-size: 20px;
+      font-family: HelveticaNeue-Bold, HelveticaNeue;
+      color: #0f8c20;
+      line-height: 26px;
+    }
+    .svip {
+      display: inline-block;
+      margin-left: 4px;
+      width: 34px;
+      height: 18px;
+      background: url('../icon/farm/SVIP@2x.png') no-repeat;
+      background-size: 100% 100%;
+    }
+    &_card_title_56 {
+      color: #f0b90b;
+    }
+    &_card_title_137 {
+      color: #8247e5;
+    }
+    &_card_content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+      border-bottom: 1px solid #b3d7cb;
+      .apr,
+      .countdown {
+        margin-top: 8px;
+        margin-bottom: 0;
+        display: flex;
+        flex-direction: column;
+        font-size: 12px;
+        font-family: HelveticaNeue-Bold, HelveticaNeue;
+        font-weight: bold;
+        color: #22292f;
+        line-height: 18px;
+      }
+      .countdown_time {
+        display: inline-block;
+        padding: 0 6px;
+        background: #c5e5c9;
+        border-radius: 3px;
+      }
+      .countdown_time_56 {
+        background: #ffeeb9;
+      }
+      .countdown_time_137 {
+        background: #e1cfff;
+      }
+      .content_name {
+        margin: 8px 0;
+        font-size: 12px;
+        font-family: HelveticaNeue;
+        color: #7a7f82;
+        line-height: 16px;
+        .tips {
+          position: relative;
+          margin-left: 2px;
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          vertical-align: sub;
+          cursor: pointer;
+          svg {
+            fill: #c5e5c9;
+          }
+        }
+        .tips_56 {
+          svg {
+            fill: #ffeeb9;
+          }
+        }
+        .tips_137 {
+          svg {
+            fill: #e1cfff;
+          }
+        }
+        .tips_content {
+          position: absolute;
+          bottom: 50%;
+          transform: translateY(50%);
+          left: 22px;
+          padding: 0 10px;
+          margin-top: 0 !important;
+          height: 24px;
+          font-style: normal;
+          font-size: 12px;
+          color: #22292f;
+          line-height: 24px !important;
+          background: #c5e5c9;
+          border-radius: 3px;
+          white-space: nowrap;
+          &::after {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            left: -5px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-top: 7px solid transparent;
+            border-bottom: 7px solid transparent;
+            border-right: 7px solid #c5e5c9;
+          }
+        }
+        .tips_content_56 {
+          background: #ffeeb9;
+          &::after {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            left: -5px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-top: 7px solid transparent;
+            border-bottom: 7px solid transparent;
+            border-right: 7px solid #ffeeb9;
+          }
+        }
+        .tips_content_137 {
+          background: #e1cfff;
+          &::after {
+            content: '';
+            display: inline-block;
+            position: absolute;
+            left: -5px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 0;
+            height: 0;
+            border-top: 7px solid transparent;
+            border-bottom: 7px solid transparent;
+            border-right: 7px solid #e1cfff;
+          }
+        }
+      }
+    }
+    &_card_value {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 0;
+      font-size: 14px;
+      font-family: HelveticaNeue;
+      color: #7a7f82;
+      line-height: 28px;
+      img {
+        display: inline-block;
+        //width: 36px;
+        height: 22px;
+      }
+      span {
+        font-size: 14px;
+        font-family: HelveticaNeue;
+        color: #121212;
+        line-height: 28px;
+      }
+    }
+    &_card_getMLP {
+      margin-bottom: 0;
+      font-size: 14px;
+      line-height: 26px;
+      font-family: IBMPlexSans;
+      font-weight: 600;
+      color: #0f8c20;
+      text-decoration: underline;
+      &:hover {
+        color: #00b900;
+        text-decoration: underline;
+      }
+    }
+    &_card_getMLP_56 {
+      color: #f0b90b;
+      &:hover {
+        color: #f3c73b;
+        text-decoration: underline;
+      }
+    }
+    &_card_getMLP_137 {
+      color: #8247e5;
+      &:hover {
+        color: #9b6bea;
+        text-decoration: underline;
+      }
+    }
+    &_card_btn {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 8px;
+      width: 100%;
+    }
+    .deposit_btn,
+    .claim_btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 130px;
+      height: 40px;
+      // line-height: 40px;
+      font-size: 14px;
+      font-family: HelveticaNeue-Medium, HelveticaNeue;
+      font-weight: 500;
+      color: #ffffff;
+      background: #0f8c20;
+      box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+      border-radius: 24px;
+      text-align: center;
+      border: 0;
+      &:hover {
+        background-color: #00b900;
+      }
+      &.disabled {
+        background-color: #b6b9bc;
+        &:hover {
+          background-color: #b6b9bc;
+          color: #ffffff;
+        }
+      }
+    }
+    .deposit_btn_56 {
+      background: #f0b90b;
+      box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+      &:hover {
+        background-color: #f3c73b;
+      }
+    }
+    .deposit_btn_137 {
+      background: #8247e5;
+      box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+      &:hover {
+        background-color: #9b6bea;
+      }
+    }
+    .claim_btn {
+      background: #121212;
+      box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+      border-radius: 24px;
+      &:hover {
+        background-color: #22292f;
+      }
+    }
+    .disable_btn {
+      background: #b6b9bc !important;
+      box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1) !important;
+      &:hover {
+        background: #b6b9bc !important;
+        box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1) !important;
+      }
+    }
+    &_card_rewards {
+      margin-top: 12px;
+      padding: 8px 10px;
+      background: #c5e5c9;
+      border-radius: 5px;
+    }
+    &_card_rewards_56 {
+      background: #ffeeb9;
+    }
+    &_card_rewards_137 {
+      background: #e1cfff;
+    }
+  }
+  .farm_popup_avaliable {
+    margin-top: 0;
+    line-height: 24px !important;
+  }
+  .vip_tip {
+    margin: 8px 0 0;
+    font-size: 12px;
+    font-family: HelveticaNeue;
+    color: #7A7F82;
+  }
+}
