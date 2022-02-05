@@ -345,7 +345,7 @@ const FarmCard = (props) => {
             }}
             disabled={!window.ethereum}
           >
-            {farmPools.networkId == ChainId.HECO && (
+            {farmPools.networkId == ChainId.ELA && (
               <FormattedMessage id='poolTextS128'/>
             )}
             {farmPools.networkId == ChainId.BSC && (

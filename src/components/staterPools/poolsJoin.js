@@ -150,11 +150,12 @@ const PoolsJoin = (props) => {
     }
     if (loadFlag) return
     setLoadFlag(true)
+    console.log("Pool in Join", pool);
     if (pool.type === 1) {
       const pool_contract = getContract(library, pool.abi, pool.address)
       if (pool.currency.is_ht) {
         pool_contract.methods
-          .offerHT()
+          .offerELA()
           .send({
             from: account,
             value: Web3.utils.toWei(`${amount}`, 'ether'),
@@ -224,7 +225,7 @@ const PoolsJoin = (props) => {
       console.log("I am here");
       if (pool.currency.is_ht) {
         pool_contract.methods
-          .purchaseHT()
+          .purchaseELA()
           .send({
             from: account,
             value: _amount,

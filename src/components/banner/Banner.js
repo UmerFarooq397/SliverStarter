@@ -22,7 +22,7 @@ import {
   useFarmInfo,
 } from '../../pages/pools/Hooks'
 import { mainContext } from '../../reducer'
-import WeStarterPDF from '../../pdfFile/Security Assessment for WeStarter - Starter.pdf'
+import SilverStarterPDF from '../../pdfFile/Security Assessment for WeStarter - Starter.pdf'
 
 const Banner = (props) => {
   const { chainId } = useActiveWeb3React()
@@ -54,10 +54,10 @@ const Banner = (props) => {
   // }, [_tmp_price_war2ht, _tmp_price_usdt2ht])
 
   const [price, fee] = useMDexPrice(
-    WAR_ADDRESS(ChainId.HECO),
-    USDT_ADDRESS(ChainId.HECO),
+    WAR_ADDRESS(ChainId.ELA),
+    USDT_ADDRESS(ChainId.ELA),
     1,
-    [WHT_ADDRESS(ChainId.HECO)],
+    [WHT_ADDRESS(ChainId.ELA)],
     128
   )
 
@@ -106,7 +106,7 @@ const Banner = (props) => {
             <a href='' className='huobi_logo polygon_logo'></a>
           </div>
           <div className='banner_small_pdf'>
-            <a href={WeStarterPDF} target='_blank'>
+            <a href={SilverStarterPDF} target='_blank'>
               <span className='pdf-icon'></span>
               <span className='pdf-text'>
                 <FormattedMessage id='certik' />
@@ -136,7 +136,7 @@ const Banner = (props) => {
           <li>
             <a
               title='title'
-              href='https://twitter.com/westarter_org'
+              href='https://twitter.com/SilverStarter_org'
               target='_blank'
               rel='noopener'
             >
@@ -148,7 +148,7 @@ const Banner = (props) => {
           <li>
             <a
               title='title'
-              href='https://t.me/westarter_official'
+              href='https://t.me/SilverStarter_official'
               target='_blank'
               rel='noopener'
             >
@@ -173,7 +173,7 @@ const Banner = (props) => {
           <li>
             <a
               title='title'
-              href='https://medium.com/@westarter'
+              href='https://medium.com/@SilverStarter'
               target='_blank'
               rel='noopener noreferrer'
             >
@@ -185,7 +185,7 @@ const Banner = (props) => {
           {/* <li>
             <a
               title='title'
-              href='https://www.yuque.com/westarter'
+              href='https://www.yuque.com/SilverStarter'
               target='_blank'
               rel='noopener'
             >
@@ -197,7 +197,7 @@ const Banner = (props) => {
           <li>
             <a
               title='title'
-              href='https://t.me/westarter_chinese'
+              href='https://t.me/SilverStarter_chinese'
               target='_blank'
               rel='noopener'
             >
@@ -220,7 +220,7 @@ const Banner = (props) => {
           </li>
         </ul>
         <div className='banner_pdf'>
-          <a href={WeStarterPDF} target='_blank'>
+          <a href={SilverStarterPDF} target='_blank'>
             <span className='pdf-icon'></span>
             <span className='pdf-text'>
               <FormattedMessage id='certik' />
@@ -229,7 +229,7 @@ const Banner = (props) => {
           {/* <a
           className='down-load'
           download='application/pptx'
-          href={WeStarterPDF}
+          href={SilverStarterPDF}
           target='_blank'
         ></a> */}
         </div>

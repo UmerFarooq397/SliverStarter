@@ -8,7 +8,7 @@ import Web3 from "web3";
 import {ChainId, RPC_URLS, WAR_ADDRESS} from "../web3/address";
 import {BLOCK_HEIGHT} from "../const";
 // var web3 = new Web3(window.ethereum);
-const web3 = new Web3(new Web3.providers.HttpProvider(RPC_URLS(ChainId.HECO)))
+const web3 = new Web3(new Web3.providers.HttpProvider(RPC_URLS(ChainId.ELA)))
 
 
 

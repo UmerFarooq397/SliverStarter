@@ -41,7 +41,7 @@ export const WalletConnect = ({ onClose, onCancel }) => {
   const connectWallet = useConnectWallet()
 
 
-  const initChainId = chainId || ChainId.HECO
+  const initChainId = chainId || ChainId.ELA
   const [netWorkFlag, setNetWorkFlag] = useState(initChainId)
 
   const connectONTOWallet = () => {
@@ -102,13 +102,13 @@ export const WalletConnect = ({ onClose, onCancel }) => {
 
               <div className={`choose-network`}>
                 <p
-                  className={`${netWorkFlag == ChainId.HECO ? 'active' : ''}`}
+                  className={`${netWorkFlag == ChainId.ELA ? 'active' : ''}`}
                   onClick={() => {
-                    selectNetWork(ChainId.HECO)
+                    selectNetWork(ChainId.ELA)
                   }}
                 >
                   <img src={HECO} />
-                  <span>Heco</span>
+                  <span>ELASTOS</span>
                   <svg
                     t='1623750759643'
                     className='icon'
@@ -126,7 +126,7 @@ export const WalletConnect = ({ onClose, onCancel }) => {
                   </svg>
                 </p>
 
-                <p
+                {/* <p
                   className={`${netWorkFlag == ChainId.BSC ? 'active' : ''}`}
                   onClick={() => {
                     selectNetWork(ChainId.BSC)
@@ -149,9 +149,9 @@ export const WalletConnect = ({ onClose, onCancel }) => {
                       p-id='1981'
                     ></path>
                   </svg>
-                </p>
+                </p> */}
 
-                <p
+                {/* <p
                   className={`${netWorkFlag == ChainId.MATIC ? 'active' : ''}`}
                   onClick={() => {
                     selectNetWork(ChainId.MATIC)
@@ -174,7 +174,7 @@ export const WalletConnect = ({ onClose, onCancel }) => {
                       p-id='1981'
                     ></path>
                   </svg>
-                </p>
+                </p> */}
               </div>
             </div>
             <div className='form-app__inner wallet-connect'>

@@ -16,9 +16,9 @@ const zh_CN = {
   cannotSubscribe: '当前无法申购',
   bannerTitle: '流动性价值发现平台',
   bannerContent1:
-    'WeStarter是跨链代币初始兑换平台，起步于HECO网络，通过资产跨链桥和多链部署为ETH、HECO、BSC等多条网络上的项目资产进行初始兑换。',
+    'SilverStarter是跨链代币初始兑换平台，起步于HECO网络，通过资产跨链桥和多链部署为ETH、HECO、BSC等多条网络上的项目资产进行初始兑换。',
   bannerContent2:
-    'WeStarter通过流畅的产品与充足的行业资源，承载多种类型资产的资源需求。以守门人的角色职责，通过代币的去中心化激励与治理机制，实现甄选优质资产的目标。',
+    'SilverStarter通过流畅的产品与充足的行业资源，承载多种类型资产的资源需求。以守门人的角色职责，通过代币的去中心化激励与治理机制，实现甄选优质资产的目标。',
   money: '输入投资金额',
   FundraisingRecord: '兑换记录',
   invest: '抵押',
@@ -93,7 +93,7 @@ const zh_CN = {
   poolsDetailText20: '参与资金规模',
   poolsDetailText21: '定向',
   poolsDetailText22:
-    '该项目代币尚未正式发行,可能存在不确定性风险, 请知晓. WeStarter 不承担任何投资损失责任。',
+    '该项目代币尚未正式发行,可能存在不确定性风险, 请知晓. SilverStarter 不承担任何投资损失责任。',
   poolsIndexText1: '兑换比例',
   poolsIndexText2: '当前进度',
   poolsIndexText3: '兑换',
@@ -247,7 +247,7 @@ const zh_CN = {
   logoTitle6: 'COOK 白名单兑换池',
   logoTitle7: 'COOK 公开兑换池',
   aboutProject:
-    'Westarter是一个连接加密货币创新者和投资者的对接平台，任何创新者都可以无需许可的使用标准化的界面来发起和管理流动性拍卖。',
+    'SilverStarter是一个连接加密货币创新者和投资者的对接平台，任何创新者都可以无需许可的使用标准化的界面来发起和管理流动性拍卖。',
   willStart: '将开始于',
   accessType: '进入方式',
   private: '白名单兑换池',
@@ -286,8 +286,8 @@ const zh_CN = {
     'TOKEN is the token of the ChainSwap platform.The total amount is 100M, 2% of the total amount is 100% unlock token, and will be distributed to public sale and airdrop.Public sale will be held as IDO on 5 different platforms with a total amount of 1M.Airdrop that is given to users is also 1M.',
   blackAboutProject1:
     'BlackHole is an approval-free decentralized & cross-chain burning protocol, innovator of perpetual deflationary blockchain ecosystem.',
-  westarterAboutProject1:
-    'WeStarter是跨链代币初始兑换平台，起步于HECO网络，通过资产跨链桥和多链部署为ETH、HECO、BSC等多条网络上的项目资产进行初始兑换。',
+  SilverStarterAboutProject1:
+    'SilverStarter是跨链代币初始兑换平台，起步于HECO网络，通过资产跨链桥和多链部署为ETH、HECO、BSC等多条网络上的项目资产进行初始兑换。',
   leverAboutProject1:
     'Lever 旨在打造 DeFi 世界中首个基于 AMM （自动做市商模式）的杠杆交易经纪平台，支持用户在 DeFi 中进行现货等资产的杠杆交易，以提高 DeFi 的资产使用效率。可以让用户一气呵成地进行抵押、借贷、杠杆交易，做多或做空任何标的资产。',
   yfxAboutProject1:
@@ -404,9 +404,9 @@ const zh_CN = {
   add: '添加',
   to: '到',
   adjustmentTips1: '亲爱的用户：',
-  adjustmentTips2: 'WeStarter近期做出一系列运营调整，现将限制以下国家IP访问：',
+  adjustmentTips2: 'SilverStarter近期做出一系列运营调整，现将限制以下国家IP访问：',
   adjustmentTips3: '日本、古巴、伊朗、中国内地、中国香港、中国澳门、朝鲜、苏丹、叙利亚、美利坚合众国及其海外领地（美属萨摩亚、关岛、北马里亚纳群岛、波多黎各和美属维京群岛）、加拿大、新加坡。',
-  adjustmentTips4: '感谢您对WeStarter的支持！',
+  adjustmentTips4: '感谢您对SilverStarter的支持！',
   adjustmentTips5: '我已确认不属于以上地区',
 
 }

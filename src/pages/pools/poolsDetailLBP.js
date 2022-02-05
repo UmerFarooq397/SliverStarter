@@ -606,7 +606,7 @@ const PoolsDetailLBP = (props) => {
               </a>
               {pool && pool.underlying.symbol === 'WAR' && (
                 <a className='no_link'>
-                  <FormattedMessage id='westarterAboutProject1' />
+                  <FormattedMessage id='SilverStarterAboutProject1' />
                 </a>
               )}
               {pool && pool.underlying.symbol === 'BLACK' && (

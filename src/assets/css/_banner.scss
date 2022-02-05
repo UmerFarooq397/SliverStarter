@@ -6,8 +6,7 @@
     position: relative;
     padding: 100px 0 58px;
     width: 100%;
-    background: #fff;
-    background-image: url('../image/weBanner.png');
+    background: rgb(0, 0, 0);
     background-repeat: no-repeat;
     background-size: 100% 660px;
     background-position: top;
@@ -22,7 +21,7 @@
     //   min-width: 1080px;
     //   height: 100%;
     //   min-height: 780px;
-    //   background-image: url('../image/weBanner.png');
+    //   background-image: url('../image/SilverStarterToken.png');
     //   background-repeat: no-repeat;
     //   background-size: 100% 500px;
     //   background-position: top;
@@ -35,7 +34,7 @@
     &_text {
       font-size: 44px;
       font-weight: 600;
-      color: #22292f;
+      color: #fcfcfc;
       line-height: 62px;
       margin-top: 50px;
     }
@@ -54,13 +53,13 @@
       width: 400px;
       height: 200px;
       border-radius: 10px;
-      border: 1px solid #979797;
+      border: 1px solid #ffffff;
     }
     &_dec {
       width: 522px;
       font-size: 18px;
       font-weight: 300;
-      color: #7a7f82;
+      color: #ffffff;
       line-height: 36px;
       margin-top: 20px;
     }
@@ -73,7 +72,7 @@
         font-size: 16px;
         font-family: PTMono-Regular, PTMono !important;
         font-weight: 400;
-        color: #22292f;
+        color: #5f5f5f;
         line-height: 20px;
       }
       .huobi_logo {
@@ -114,7 +113,7 @@
         svg {
           fill: #22292f;
           &:hover {
-            fill: #0f8c20;
+            fill: #979797;
           }
         }
         img {
@@ -122,7 +121,7 @@
           height: 24px;
           &:hover {
             svg {
-              fill: #0f8c20;
+              fill: #727272;
             }
           }
         }
@@ -139,10 +138,10 @@
         margin-right: 16px;
         padding: 0 14px;
         height: 40px;
-        background: #0f8c20;
+        background: #aaaaaa;
         border-radius: 24px;
         &:hover {
-          background: #00b900;
+          background: #525252;
         }
       }
       .pdf-icon {
@@ -214,7 +213,7 @@
         height: 20px;
         font-size: 12px;
         line-height: 20px;
-        color: #0f8c20;
+        color: #858585;
         background: #d4e9e2;
         border-radius: 5px;
       }
@@ -278,7 +277,6 @@
     width: 100%;
     min-width: 1080px;
     background: #fff;
-    background-image: url('../image/weBanner.png');
     background-repeat: no-repeat;
     background-size: 100% 520px;
     background-position: 0 -8px;
@@ -290,7 +288,7 @@
     &_text {
       font-size: 44px;
       font-weight: 600;
-      color: #22292f;
+      color: #ffffff;
       line-height: 62px;
       margin-top: 50px;
     }
@@ -540,7 +538,6 @@
       margin: 0 auto;
       width: 98%;
       height: 270px;
-      background-image: url('../image/weBanner_h5.png');
       background-repeat: no-repeat;
       background-size: 100% 100%;
     }
@@ -548,7 +545,7 @@
       display: none;
       font-size: 44px;
       font-weight: 600;
-      color: #22292f;
+      color: #ffffff;
       line-height: 62px;
       margin-top: 50px;
     }
@@ -796,7 +793,6 @@
       margin: 0 auto;
       width: 99%;
       height: 270px;
-      background-image: url('../image/weBanner_h5.png');
       background-repeat: no-repeat;
       background-size: 100% 100%;
     }
@@ -804,7 +800,7 @@
       display: none;
       font-size: 44px;
       font-weight: 600;
-      color: #22292f;
+      color: #ffffff;
       line-height: 62px;
     }
     &_text-title {

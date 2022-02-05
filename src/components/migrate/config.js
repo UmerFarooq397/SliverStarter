@@ -9,7 +9,7 @@ export const bridgeCardConfig = (fromChainId, toChainId, from_asset_address) => 
     const config = [
         {
             fromChainId: ChainId.BSC,
-            toChainId: ChainId.HECO,
+            toChainId: ChainId.ELA,
             toChainName: "Heco",
             fromChainName: "BSC",
             toFullName: '',
@@ -29,7 +29,7 @@ export const bridgeCardConfig = (fromChainId, toChainId, from_asset_address) => 
             },
             addAsset: { // 钱包添加Token配置
                 name: "WAR",
-                address: WAR_ADDRESS[ChainId.HECO],
+                address: WAR_ADDRESS[ChainId.ELA],
                 assetsText: 'WAR(Heco)',
                 icon: WAR_ICON
             },
@@ -41,7 +41,7 @@ export const bridgeCardConfig = (fromChainId, toChainId, from_asset_address) => 
             }
         },
         {
-            fromChainId: ChainId.HECO,
+            fromChainId: ChainId.ELA,
             toChainId: ChainId.BSC,
             toChainName: "BSC",
             fromChainName: "Heco",
@@ -58,7 +58,7 @@ export const bridgeCardConfig = (fromChainId, toChainId, from_asset_address) => 
                 abi: ChainSwapAbi,
             },
             fromAsset: {
-                address: WAR_ADDRESS[ChainId.HECO] // WAR Token合约地址
+                address: WAR_ADDRESS[ChainId.ELA] // WAR Token合约地址
             },
             addAsset: { // 钱包添加Token配置
                 name: "WAR",
@@ -74,7 +74,7 @@ export const bridgeCardConfig = (fromChainId, toChainId, from_asset_address) => 
             }
         },
         {
-            fromChainId: ChainId.HECO,
+            fromChainId: ChainId.ELA,
             toChainId: ChainId.MATIC,
             toChainName: "MATIC",
             fromChainName: "Heco",
@@ -91,7 +91,7 @@ export const bridgeCardConfig = (fromChainId, toChainId, from_asset_address) => 
                 abi: ChainSwapAbi,
             },
             fromAsset: {
-                address: WAR_ADDRESS[ChainId.HECO] // WAR Token合约地址
+                address: WAR_ADDRESS[ChainId.ELA] // WAR Token合约地址
             },
             addAsset: { // 钱包添加Token配置
                 name: "RAW",

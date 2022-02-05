@@ -3,7 +3,6 @@ import { Link, NavLink, useLocation } from 'react-router-dom'
 import { FormattedMessage } from 'react-intl'
 import { usePoolsInfo, usePoolsLBPInfo } from '../../pages/pools/Hooks'
 import { mainContext } from '../../reducer'
-import WeStarterPDF from '../../pdfFile/Security Assessment for WeStarter - Starter.pdf'
 
 export const FarmBanner = () => {
   const { dispatch, state } = useContext(mainContext)

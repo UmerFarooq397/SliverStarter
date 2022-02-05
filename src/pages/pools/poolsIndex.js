@@ -691,7 +691,7 @@ const PoolsIndex = (props) => {
                 })
               }}
             >
-              {pool.networkId == ChainId.HECO && (
+              {pool.networkId == ChainId.ELA && (
                 <FormattedMessage id='poolTextS128' />
               )}
               {pool.networkId == ChainId.MATIC && (

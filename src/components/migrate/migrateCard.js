@@ -43,7 +43,7 @@ const fromChainSelectData = [
     {
         icon: HECO,
         value: 'Heco',
-        chainId: ChainId.HECO
+        chainId: ChainId.ELA
     },
     {
         icon: BSC,
@@ -55,7 +55,7 @@ const toChainSelectData = [
     {
         icon: HECO,
         value: 'Heco',
-        chainId: ChainId.HECO
+        chainId: ChainId.ELA
     },
     {
         icon: BSC,
@@ -69,8 +69,8 @@ const toChainSelectData = [
     }
 ]
 // const debounceChangeNetwork = debounce((active, chainId)=>{
-//     if (!active || (chainId !== ChainId.HECO && chainId !== ChainId.BSC)){
-//         changeNetwork(ChainId.HECO).then()
+//     if (!active || (chainId !== ChainId.ELA && chainId !== ChainId.BSC)){
+//         changeNetwork(ChainId.ELA).then()
 //     }
 // }, 500)
 
@@ -100,7 +100,7 @@ const BridgeCard = (props) => {
 
     const [getList, setGetList] = useState(0)
 
-    const [fromChainId, setFromChainId] = useState(ChainId.HECO)
+    const [fromChainId, setFromChainId] = useState(ChainId.ELA)
     const [toChainId, setToChainId] = useState(ChainId.MATIC)
 
     const [visibleSwitchWithdrawPopup, setVisibleSwitchWithdrawPopup] = useState(false)
@@ -187,7 +187,7 @@ const BridgeCard = (props) => {
     }
 
     useEffect(() => {
-        if ((chainId === ChainId.HECO || chainId === ChainId.BSC) && !visibleSwitchWithdrawPopup) {
+        if ((chainId === ChainId.ELA || chainId === ChainId.BSC) && !visibleSwitchWithdrawPopup) {
             if (chainId === toChainId) {
                 const toChainItem = toChainSelectData.find(i => i.chainId !== chainId)
                 setToChainId(toChainItem.chainId)

@@ -44,7 +44,7 @@ const Footer = (props) => {
           <li>
             <a
               title='title'
-              href='https://twitter.com/westarter_org'
+              href='https://twitter.com/SilverStarter_org'
               target='_blank'
               rel='noopener'
             >
@@ -57,7 +57,7 @@ const Footer = (props) => {
           <li>
             <a
               title='title'
-              href='https://t.me/westarter_official'
+              href='https://t.me/SilverStarter_official'
               target='_blank'
               rel='noopener'
             >
@@ -82,7 +82,7 @@ const Footer = (props) => {
           {/*<li>*/}
           {/*  <a*/}
           {/*    title='title'*/}
-          {/*    href='https://www.yuque.com/westarter'*/}
+          {/*    href='https://www.yuque.com/SilverStarter'*/}
           {/*    target='_blank'*/}
           {/*    rel='noopener'*/}
           {/*  >*/}
@@ -95,7 +95,7 @@ const Footer = (props) => {
           <li>
             <a
               title='title'
-              href='https://medium.com/@westarter'
+              href='https://medium.com/@SilverStarter'
               target='_blank'
               rel='noopener noreferrer'
             >
@@ -108,7 +108,7 @@ const Footer = (props) => {
           <li>
             <a
               title='title'
-              href='https://t.me/westarter_chinese'
+              href='https://t.me/SilverStarter_chinese'
               target='_blank'
               rel='noopener'
             >

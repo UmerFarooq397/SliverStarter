@@ -24,9 +24,9 @@ export const ChangeNetworks = ({ onClose }) => {
             <div className='choose-network-box'>
               <div className={`choose-network change-network`}>
                 <p
-                  className={`${chainId == ChainId.HECO ? 'active' : ''}`}
+                  className={`${chainId == ChainId.ELA ? 'active' : ''}`}
                   onClick={() => {
-                    changeNetwork(ChainId.HECO).then(() => {
+                    changeNetwork(ChainId.ELA).then(() => {
                       // TODO 关闭窗口
                       onClose()
                     })

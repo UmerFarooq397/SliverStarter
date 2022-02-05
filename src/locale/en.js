@@ -14,7 +14,7 @@ const en_US = {
   cannotSubscribe: 'Unavailable to purchase currently',
   bannerTitle: 'Liquidity Valuation Discovery Platform',
   bannerContent1:
-    'WeStarter is a cross-chain token initial swap platform which based on HECO network. Through the fluency of the product and sufficient industry resources, it carries the requirement of resources for a variety of asset types. With the role of gatekeeper, through the decentralized incentive and governance mechanism of tokens, to achieve the goal of selecting high-quality assets.',
+    'SilverStarter is a token initial swap platform which based on ELASTOS network. Through the fluency of the product and sufficient industry resources, it carries the requirement of resources for a variety of asset types. With the role of gatekeeper, through the decentralized incentive and governance mechanism of tokens, to achieve the goal of selecting high-quality assets.',
   bannerContent2: '',
   money: 'input investment amount',
   FundraisingRecord: 'Fundraising Record',
@@ -71,7 +71,7 @@ const en_US = {
   poolsDetailText1: 'Swap Amount',
   poolsDetailText2: 'Swap Progress',
   poolsDetailText3: 'Join Pool',
-  poolsDetailText4: 'View HECO',
+  poolsDetailText4: 'View ELA',
   poolsDetailText5: 'Claim',
   poolsDetailText6: 'Pool Details',
   poolsDetailText7: 'About the Project',
@@ -90,7 +90,7 @@ const en_US = {
   poolsDetailText20: 'Total',
   poolsDetailText21: 'Special',
   poolsDetailText22:
-    "FYI: HCT hasn't officially launched on-chain with uncertainty in. Westarter will not be held responsible for any investment losses.",
+    "FYI: HCT hasn't officially launched on-chain with uncertainty in. SilverStarter will not be held responsible for any investment losses.",
   poolsIndexText1: 'Ratio',
   poolsIndexText2: 'Progress',
   poolsIndexText3: 'Enter Pool',
@@ -243,7 +243,7 @@ const en_US = {
   logoTitle6: 'COOK Private Pool',
   logoTitle7: 'COOK Public Pool',
   aboutProject:
-    'Westarter is a platform to bridge cryptocurrency innovators and investors, any innovator can use a standardized interface to launch and manage liquidity bids without a permit.',
+    'SilverStarter is a platform to bridge cryptocurrency innovators and investors, any innovator can use a standardized interface to launch and manage liquidity bids without a permit.',
   willStart: 'Will start in',
   accessType: 'Access Type',
   private: 'Private',
@@ -285,8 +285,8 @@ const en_US = {
     'TOKEN is the token of the ChainSwap platform.The total amount is 100M, 2% of the total amount is 100% unlock token, and will be distributed to public sale and airdrop.Public sale will be held as IDO on 5 different platforms with a total amount of 1M.Airdrop that is given to users is also 1M.',
   blackAboutProject1:
     'BlackHole is an approval-free decentralized & cross-chain burning protocol, innovator of perpetual deflationary blockchain ecosystem.',
-  westarterAboutProject1:
-    'WeStarter is a cross-chain token initial swap platform which based on HECO network. Through the fluency of the product and sufficient industry resources, it carries the requirement of funds and resources for a variety of asset types. With the role of gatekeeper, through the decentralized incentive and governance mechanism of tokens, to achieve the goal of selecting high-quality assets.',
+  SilverStarterAboutProject1:
+    'SilverStarter is a token initial swap platform which based on ELASTOS network. Through the fluency of the product and sufficient industry resources, it carries the requirement of resources for a variety of asset types. With the role of gatekeeper, through the decentralized incentive and governance mechanism of tokens, to achieve the goal of selecting high-quality assets.',
   leverAboutProject1:
     'Lever is developed to bridge the gap between lending protocols and DEXs, increasing capital efficiency in DeFi.Lever is an open-source margin trading platform where you can lend, borrow and perform leveraged trading to either buy long/sell short an asset in just one place.',
   yfxAboutProject1:
@@ -403,9 +403,9 @@ const en_US = {
   add: 'add',
   to: 'to',
   adjustmentTips1: 'Dear users,',
-  adjustmentTips2: 'WeStarter recently made a series of operational changes that will now restrict IP access to the following countries:',
+  adjustmentTips2: 'SilverStarter recently made a series of operational changes that will now restrict IP access to the following countries:',
   adjustmentTips3: 'Japan, Cuba, Iran, Mainland China, Hong Kong China, Macao China, The Democratic People\'s Republic of Korea, Sudan, Syria, United States of America and its Overseas Territories (American Samoa, Guam, Northern Mariana Islands, Puerto Rico and THE United States Virgin Islands), Canada and Singapore.',
-  adjustmentTips4: 'Thank you for supporting WeStarter!',
+  adjustmentTips4: 'Thank you for supporting SilverStarter!',
   adjustmentTips5: 'I\'m not from these regions.',
 }
 export default en_US

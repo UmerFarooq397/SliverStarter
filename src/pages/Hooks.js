@@ -14,7 +14,7 @@ const createContractERC20 = (chainId, address) => {
 
 }
 
-export const useBalance = (address, networkId=ChainId.HECO) => {
+export const useBalance = (address, networkId=ChainId.ELA) => {
   const { account, active, library } = useActiveWeb3React()
   const [balance, setBalance] = useState(0)
   const blockHeight = useBlockHeight()

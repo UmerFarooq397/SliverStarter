@@ -2,8 +2,8 @@ import React, { useContext, useEffect, useState } from 'react'
 import { useActiveWeb3React } from '../../web3'
 import { WAR_ADDRESS, ChainId } from '../../web3/address'
 import globe from '../../assets/icon/globe.png'
-// import WeStarterGuidebookZH from '../../pdfFile/WeStarter -优质资产起跑线.pdf'
-import WeStarterGuidebookEN from '../../pdfFile/WeStarter-Introduction in English.pdf'
+// import SilverStarterGuidebookZH from '../../pdfFile/SilverStarter -优质资产起跑线.pdf'
+import SilverStarterGuidebookEN from '../../pdfFile/WeStarter-Introduction in English.pdf'
 import { formatAddress, formatAmount } from '../../utils/format'
 import { mainContext } from '../../reducer'
 import { HANDLE_WALLET_MODAL, HANDLE_CHANGE_NETWORKS, HANDLE_SHOW_MENUMASK_MODAL } from '../../const'
@@ -120,8 +120,8 @@ export const Header = () => {
                   <a
                     href={
                       language === '中文简体'
-                        ? WeStarterGuidebookEN
-                        : WeStarterGuidebookEN
+                        ? SilverStarterGuidebookEN
+                        : SilverStarterGuidebookEN
                     }
                     target='_blank'
                     className='menu__link'
@@ -134,8 +134,8 @@ export const Header = () => {
                   <a
                     href={
                       language === '中文简体'
-                        ? 'https://westarter.medium.com/westarter-tutorial-how-to-set-up-the-heco-wallets-5d8bfc253c78'
-                        : 'https://westarter.medium.com/westarter-tutorial-how-to-set-up-the-heco-wallets-5d8bfc253c78 '
+                        ? 'https://SilverStarter.medium.com/SilverStarter-tutorial-how-to-set-up-the-heco-wallets-5d8bfc253c78'
+                        : 'https://SilverStarter.medium.com/SilverStarter-tutorial-how-to-set-up-the-heco-wallets-5d8bfc253c78 '
                     }
                     target='_blank'
                     className='menu__link'
@@ -195,7 +195,7 @@ export const Header = () => {
                 src={BSC}
               />
             )}
-            {chainId == ChainId.HECO && (
+            {chainId == ChainId.ELA && (
               <img
                 onClick={() => {
                   dispatch({

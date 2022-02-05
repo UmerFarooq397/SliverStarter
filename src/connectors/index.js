@@ -9,7 +9,7 @@ import {UnsupportedChainIdError, useWeb3React} from "@web3-react/core";
 export const POLLING_INTERVAL = 12000
 
 export const injected = new InjectedConnector({
-  supportedChainIds: [ChainId.HECO, ChainId.BSC, ChainId.MATIC, ChainId.LOCALHOST],
+  supportedChainIds: [ChainId.ELA, ChainId.BSC, ChainId.MATIC, ChainId.LOCALHOST],
 })
 
 
@@ -35,7 +35,7 @@ const maticWalletConnector = new WalletConnectConnector({
 })
 
 export const walletConnector = {
-  [ChainId.HECO]: hecoWalletConnector,
+  [ChainId.ELA]: hecoWalletConnector,
   [ChainId.BSC]: bscWalletConnector,
   [ChainId.MATIC]: maticWalletConnector,
 }
@@ -63,7 +63,7 @@ const hecoNetwork = {
   rpcUrls: [
     'https://http-mainnet-node.huobichain.com',
   ],
-  blockExplorerUrls: [SCAN_ADDRESS[ChainId.HECO]],
+  blockExplorerUrls: [SCAN_ADDRESS[ChainId.ELA]],
 }
 
 const maticNetwork = {
@@ -79,7 +79,7 @@ const maticNetwork = {
 }
 
 const networkConf = {
-  [ChainId.HECO]: hecoNetwork,
+  [ChainId.ELA]: hecoNetwork,
   [ChainId.BSC]: bscNetwork,
   [ChainId.MATIC]: maticNetwork
 }

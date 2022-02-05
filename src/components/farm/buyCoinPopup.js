@@ -44,7 +44,7 @@ const BuyCoinPopup = (props) => {
 
   // const [outAmount, outFee] = useMDexPrice(
   //   fromToken,
-  //   chainId && WAR_ADDRESS(ChainId.HECO),
+  //   chainId && WAR_ADDRESS(ChainId.ELA),
   //   amount,
   //   middlePath,
   //     128
@@ -52,13 +52,13 @@ const BuyCoinPopup = (props) => {
   // console.log('outAmount, outFee, old', outAmount, outFee)
 
   const [outAmount, outFee] =  useAmountsOut(
-    [fromToken, ...middlePath, WAR_ADDRESS(ChainId.HECO)],
+    [fromToken, ...middlePath, WAR_ADDRESS(ChainId.ELA)],
     amount,
-    ChainId.HECO
+    ChainId.ELA
   )
 
   const [radioOutAmount, fee] = useMDexPrice(
-    chainId && WAR_ADDRESS(ChainId.HECO),
+    chainId && WAR_ADDRESS(ChainId.ELA),
     fromToken,
     1,
     middlePath,
@@ -67,20 +67,20 @@ const BuyCoinPopup = (props) => {
 
   const [HTRadioOutAmount, HTFee] = useMDexPrice(
     fromToken,
-    chainId && WAR_ADDRESS(ChainId.HECO),
+    chainId && WAR_ADDRESS(ChainId.ELA),
     0.1,
     middlePath,
       128
   )
 
   const USDTAllowance = useAllowance(
-    chainId && USDT_ADDRESS(ChainId.HECO),
+    chainId && USDT_ADDRESS(ChainId.ELA),
     MDEX_ROUTER_ADDRESS(chainId).address,
     account
   )
 
   const MDEXAllowance = useAllowance(
-    chainId && WMDEX_ADDRESS(ChainId.HECO),
+    chainId && WMDEX_ADDRESS(ChainId.ELA),
     MDEX_ROUTER_ADDRESS(chainId).address,
     account
   )
@@ -228,7 +228,7 @@ const BuyCoinPopup = (props) => {
       contract.methods
         .swapExactETHForTokens(
           numToWei(minAmount),
-          [WHT_ADDRESS(ChainId.HECO), WAR_ADDRESS(ChainId.HECO)],
+          [WHT_ADDRESS(ChainId.ELA), WAR_ADDRESS(ChainId.ELA)],
           account,
           deadline
         )
@@ -255,11 +255,11 @@ const BuyCoinPopup = (props) => {
       let methodsAddress = ''
       let path = ''
       if (tabFlag === 'USDT') {
-        methodsAddress = USDT_ADDRESS(ChainId.HECO)
-        path = [methodsAddress, WAR_ADDRESS(ChainId.HECO)]
+        methodsAddress = USDT_ADDRESS(ChainId.ELA)
+        path = [methodsAddress, WAR_ADDRESS(ChainId.ELA)]
       } else if (tabFlag === 'MDX') {
-        methodsAddress = WMDEX_ADDRESS(ChainId.HECO)
-        path = [methodsAddress, USDT_ADDRESS(ChainId.HECO), WAR_ADDRESS(ChainId.HECO)]
+        methodsAddress = WMDEX_ADDRESS(ChainId.ELA)
+        path = [methodsAddress, USDT_ADDRESS(ChainId.ELA), WAR_ADDRESS(ChainId.ELA)]
       }
       contract.methods
         .swapExactTokensForTokens(

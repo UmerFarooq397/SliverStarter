@@ -57,21 +57,25 @@ const PoolsDetail = (props) => {
 
   useEffect(() => {
     setPool(pools[0])
-    console.log(pools[0]);
+    console.log("Pool Info",pools[0]);
     if (pools[0]) {
       const {status, start_at, time, timeClose, type} = pools[0]
       if (status === 0) {
+        console.log("SetPool0", start_at * 1000 - Date.now());
         setLeftTime(start_at * 1000 - Date.now())
       } else if (status === 1) {
         if (type === 0) {
           if (now >= timeClose) {
+            console.log("SetPool1", start_at * 1000 - Date.now());
             // 等待中
             setLeftTime((time - now) * 1000)
           } else {
+            console.log("SetPool-1", start_at * 1000 - Date.now());
             // 募资中
             setLeftTime((timeClose - now) * 1000)
           }
         } else {
+          console.log("SetPool3", start_at * 1000 - Date.now());
           setLeftTime((time - now) * 1000)
         }
       }
@@ -263,7 +267,7 @@ const PoolsDetail = (props) => {
               : 'pools_detail_btn_disable'
           }`}
           onClick={() => {
-            console.log("Close time",pool.timeClose);
+            console.log("Close time", pool);
             if (pool.status === 1) {
               if (pool.userFull) {
                 message.info(intl.formatMessage({ id: 'ParticipantsAreFull' }))
@@ -294,6 +298,7 @@ const PoolsDetail = (props) => {
                 }
               }
             } else {
+              console.log("PoolStatus", pool.status);
               message.info(intl.formatMessage({ id: 'cannotSubscribe' }))
             }
           }}
@@ -932,7 +937,7 @@ const PoolsDetail = (props) => {
               )}
               {pool && pool.underlying.symbol === 'WAR' && (
                 <a className='no_link'>
-                  <FormattedMessage id='westarterAboutProject1' />
+                  <FormattedMessage id='SilverStarterAboutProject1' />
                 </a>
               )}
               {pool && pool.underlying.symbol === 'BLACK' && (

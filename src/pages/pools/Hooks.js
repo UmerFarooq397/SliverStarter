@@ -72,7 +72,7 @@ export const useStakingInfo = (stakingInfo) => {
   const [earnedTotal, setEarnedTotal] = useState()
   const [balance, setBalance] = useState()
   function queryStakingInfo() {
-    var web3 = new Web3(new Web3.providers.HttpProvider(RPC_URLS(ChainId.HECO)))
+    var web3 = new Web3(new Web3.providers.HttpProvider(RPC_URLS(ChainId.ELA)))
     const contract = new web3.eth.Contract(
       StakingReward,
       stakingInfo.stakingAddress
@@ -146,7 +146,7 @@ export const useStakingInfo = (stakingInfo) => {
       } else {
         const tokenContract = new web3.eth.Contract(
           StakingReward,
-          WETH_ADDRESS(ChainId.HECO)
+          WETH_ADDRESS(ChainId.ELA)
         )
         tokenContract.methods
           .balanceOf(stakingInfo.stakingAddress)
@@ -498,7 +498,7 @@ const debounceFn = debounce((pools, account, callback) => {
             underlyingAddress,
           ] = data
           let time = 0,timeSettle = 0,currency_allowance = 0
-
+          
           if (pool.currency.is_ht) {
             time = data[7]
             timeSettle = data[8]
@@ -519,6 +519,7 @@ const debounceFn = debounce((pools, account, callback) => {
           const [completed_, amount, volume, rate] = settleable
           let status = pool.status || 0 // 即将上线
           const timeClose = time
+          console.log("pool.start_at:::", pool.start_at);
           if (timeSettle) {
             // time 如果没有的话，使用timeSettle填充
             time = timeSettle
@@ -545,6 +546,8 @@ const debounceFn = debounce((pools, account, callback) => {
           )
             .multipliedBy(new BigNumber(price))
             .div(new BigNumber(Web3.utils.toWei('1', 'ether')))
+            console.log("Amount:::", pool.amount);
+            console.log("Price::", price);
 
           // 手动计算rate，合约取的将弃用
           // 1. 取合约地址的usdt/ht/bnb的余额
@@ -577,6 +580,12 @@ const debounceFn = debounce((pools, account, callback) => {
           Object.assign(pool.underlying, {
             address: underlyingAddress === '0x0000000000000000000000000000000000000000' ? '' : underlyingAddress,
           })
+          console.log("TimeClose::", timeClose);
+          console.log("totalPurchasedCurrency::", totalPurchasedCurrency);
+          console.log("totalPurchasedAmount::", new BigNumber(totalPurchasedCurrency)
+          .dividedBy(totalPurchasedAmount)
+          .toFixed(2, 1)
+          .toString() * 1);
           return Object.assign({}, pool, {
             ratio: `1${pool.underlying.symbol}=${formatAmount(price, 18, 5)}${
               pool.currency.symbol
@@ -899,7 +908,7 @@ export const usePoolsLBPInfo = (address = '') => {
   })
 
   useMemo(() => {
-    const multicallProvider = getOnlyMultiCallProvider(ChainId.HECO)
+    const multicallProvider = getOnlyMultiCallProvider(ChainId.ELA)
     Promise.all(
       poolsLBP.map((pool) => {
         // 如果还未开始，则不调用合约
@@ -1165,16 +1174,16 @@ export const useMdxARP = (
 
   const lptValue = useLTPValue(
     lpt_address,
-    WAR_ADDRESS(ChainId.HECO),
+    WAR_ADDRESS(ChainId.ELA),
     pool_address,
     pool_abi,
     _chainId
   )
   const [mdex2warPrice, mdex2warPriceFee] = useMDexPrice(
     MDEX_ADDRESS,
-    WAR_ADDRESS(ChainId.HECO),
+    WAR_ADDRESS(ChainId.ELA),
     daily,
-    [USDT_ADDRESS(ChainId.HECO)],
+    [USDT_ADDRESS(ChainId.ELA)],
     _chainId, // 取价格的chainId只有在HECO上有
     farmPools,
     pool_address

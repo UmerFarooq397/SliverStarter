@@ -19,7 +19,7 @@ import MATIC from '../../assets/icon/MATIC@2x.png'
 import {bridgeCardConfig} from "./config";
 
 const CurrencyIcon = {
-    [ChainId.HECO]: {
+    [ChainId.ELA]: {
       icon: HECO,
       title: 'Heco'
     },
@@ -33,7 +33,7 @@ const CurrencyIcon = {
   }
   }
 
-var web3HECO = new Web3(new Web3.providers.HttpProvider(RPC_URLS(ChainId.HECO)))
+var web3HECO = new Web3(new Web3.providers.HttpProvider(RPC_URLS(ChainId.ELA)))
 var web3BSC = new Web3(new Web3.providers.HttpProvider(RPC_URLS(ChainId.BSC)))
 
 /*const pair = [
@@ -100,13 +100,13 @@ const MigrateList = ({onExtractItem, getList}) => {
     setLoading(true)
     // 每一个跨链方向[to, from]
     const directions = [{
-      from: ChainId.HECO,
+      from: ChainId.ELA,
       to: ChainId.BSC
     }, {
       from: ChainId.BSC,
-      to: ChainId.HECO
+      to: ChainId.ELA
     },{
-      from: ChainId.HECO,
+      from: ChainId.ELA,
       to: ChainId.MATIC
     },{
       from: ChainId.BSC,
@@ -114,7 +114,7 @@ const MigrateList = ({onExtractItem, getList}) => {
     }]
     // const directions = [
     //     {
-    //     from: ChainId.HECO,
+    //     from: ChainId.ELA,
     //     to: ChainId.BSC
     //   }]
     // 获取maxNonce
