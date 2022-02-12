@@ -1279,7 +1279,7 @@ const getPrice = async (address1, address2, amount, path, _chainId) => {
   for (let i = 1; i < _path.length; i++) {
     const from_address = _path[i - 1]
     const to_address = _path[i]
-    _price = await getPairPrice(from_address, to_address, _price, _chainId)
+    _price = 0
     // _fee = _fee + _fee_amount * FEE_RADIO
     // _fee_amount = _fee_amount - _fee_amount * FEE_RADIO
     _fee = new BigNumber(_fee)
@@ -1322,7 +1322,8 @@ export const useMDexPrice = (
       blockHeight > 0
     ) {
       // use path
-      console.log('address1, address2', address1, address2)
+      console.log("Chain ID",_chainId)
+      console.log('address1, address2', address1, address2, "::Chain ID")
       getPrice(address1, address2, amount, path, _chainId).then(
         ([_price, _fee]) => {
           setPrice(_price)

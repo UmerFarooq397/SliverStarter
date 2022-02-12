@@ -62,7 +62,7 @@ export const Header = () => {
       <div className='center'>
         <div className='header__box'>
           <Link to='/' className='header__logo'>
-            <LogoText />
+            <img style={{height:"70px"}} src='https://secureservercdn.net/160.153.138.53/n6d.7dd.myftpupload.com/wp-content/uploads/2021/11/footer-logo.png'></img>
           </Link>
 
           <Link
@@ -74,7 +74,7 @@ export const Header = () => {
 
           <div className='header__menu'>
             <nav className='menu'>
-              <ul className='menu__list'>
+              <ul className='menu__list' style={{color:"rgb(142 142 143)"}}>
                 <li className='menu__item'>
                   <NavLink
                     exact
@@ -151,7 +151,7 @@ export const Header = () => {
           <div className='header__menu-wrapper'>
             <div
               className='language'
-              style={{ marginRight: '16px' }}
+              style={{ marginRight: '16px',color:"rgb(142 142 143)" }}
               // onClick={() => tabLanguage(language)}
             >
               <img src={globe} alt='' />
@@ -183,18 +183,7 @@ export const Header = () => {
             </div>
             {/* {active && <img className='exchange' src={Exchange} />} */}
 
-            {chainId == ChainId.BSC && (
-              <img
-                onClick={() => {
-                  dispatch({
-                    type: HANDLE_CHANGE_NETWORKS,
-                    changeNetworkStatus: true,
-                  })
-                }}
-                className='header-network'
-                src={BSC}
-              />
-            )}
+            
             {chainId == ChainId.ELA && (
               <img
                 onClick={() => {
@@ -207,30 +196,7 @@ export const Header = () => {
                 src={HECO}
               />
             )}
-            {chainId == ChainId.MATIC && (
-              <img
-                onClick={() => {
-                  dispatch({
-                    type: HANDLE_CHANGE_NETWORKS,
-                    changeNetworkStatus: true,
-                  })
-                }}
-                className='header-network'
-                src={MATIC}
-              />
-            )}
-
-            {active && (
-              <div className='ht-balance'>
-                <span>
-                  <img
-                    src={chainId === ChainId.MATIC ? RAW_ICON : WAR_ICON}
-                    alt=''
-                  />
-                </span>
-                <p>{formatAmount(balance)}</p>
-              </div>
-            )}
+            
             {active && (
               <div className='header-account'>
                 <div

@@ -58,7 +58,7 @@ const Banner = (props) => {
     USDT_ADDRESS(ChainId.ELA),
     1,
     [WHT_ADDRESS(ChainId.ELA)],
-    128
+    21
   )
 
   useEffect(() => {
@@ -129,8 +129,6 @@ const Banner = (props) => {
             <FormattedMessage id='bannerText1' /> :{' '}
           </span>{' '} */}
           <a href='' className='huobi_logo'></a>
-          <a href='' className='huobi_logo binance_logo'></a>
-          <a href='' className='huobi_logo polygon_logo'></a>
         </div>
         <ul className='banner_svg__links'>
           <li>
@@ -251,7 +249,7 @@ const Banner = (props) => {
             {/* href='https://ht.mdex.com/#/swap?outputCurrency=0x910651f81a605a6ef35d05527d24a72fecef8bf0'
           target='_blank' */}
 
-            {chainId == 128 && (
+            {chainId == 21 && (
               <a
                 className='banner_related_data_buy'
                 onClick={() => {

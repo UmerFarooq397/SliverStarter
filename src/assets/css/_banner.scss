@@ -11,6 +11,7 @@
     background-size: 100% 660px;
     background-position: top;
     height: auto;
+    background-image: url('../image/Use-cases-background-image.png');
     // &:after {
     //   content: '';
     //   position: absolute;
@@ -77,7 +78,7 @@
       }
       .huobi_logo {
         display: inline-block;
-        background-image: url('../icon/huobi-logo.svg');
+        background-image: url('../icon/elastos_logo_white.png');
         background-repeat: no-repeat;
         background-size: 100% 100%;
         width: 168px;
@@ -173,7 +174,7 @@
       margin: 0 auto 0;
       width: 1080px;
       height: 140px;
-      background: url('../../assets/icon/related_bg@2x.png') no-repeat;
+      // background: url('../../assets/icon/related_bg@2x.png') no-repeat;
       background-size: 100% 100%;
     }
     &_related_data {
@@ -427,7 +428,7 @@
       margin: 0 auto 0;
       width: 1080px;
       height: 140px;
-      background: url('../../assets/icon/related_bg@2x.png') no-repeat;
+      // background: url('../../assets/icon/related_bg@2x.png') no-repeat;
       background-size: 100% 100%;
     }
     &_related_data {

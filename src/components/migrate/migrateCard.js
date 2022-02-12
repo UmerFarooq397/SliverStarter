@@ -91,10 +91,10 @@ const BridgeCard = (props) => {
     const [transferData, setTransferData] = useState({
         account,
         extractAmount: "0",
-        fromChainId: 128,
+        fromChainId: 21,
         nonce: 0,
         pledgeAmount: "0.00001",
-        toChainId: 56,
+        toChainId: 21,
         assets: 'WAR'
     })//质押的数据，用于提取
 

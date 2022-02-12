@@ -14,6 +14,7 @@ export function getHttpWeb3(chainId) {
 
 export function getContract(library, abi, address) {
   const web3 = new Web3(library.provider)
+  console.log("ADDRESS:::", address);
   return new web3.eth.Contract(abi, address)
 }
 

@@ -897,8 +897,8 @@ const PoolsIndex = (props) => {
                 listData.map((pool, index) => {
                   return renderCard(pool, index)
                 })}
-              {tabFlag === 1 && listData.length < 3 && [1, 2, 3].map(noLogin)}
-              {[2].includes(tabFlag) && !listData.length && noData()}
+              {/* {tabFlag === 1 && listData.length < 3 && [1, 2, 3].map(noLogin)}
+              {[2].includes(tabFlag) && !listData.length && noData()} */}
             </div>
           </div>
         </div>

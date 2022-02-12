@@ -12,8 +12,8 @@ export const SCAN_ADDRESS = {
 
 export const ADDRESS_0 = '0x0000000000000000000000000000000000000000'
 
-export const MDEX_POOL_ADDRESS = '0xFB03e11D93632D97a8981158A632Dd5986F5E909'
-export const MDEX_ADDRESS = '0x25D2e80cB6B86881Fd7e07dd263Fb79f4AbE033c'
+export const MDEX_POOL_ADDRESS = '0xF95cA451890de4AEfBCC94B14F6C67438478B54c'
+export const MDEX_ADDRESS = '0x295A021f1885ecf3c46f8022844927E79f94de0B'
 
 // 计算apr的合约
 export function CALC_ADDRESS(chainId){
@@ -88,10 +88,10 @@ export function MINE_MOUNTAIN_ADDRESS(chainId) {
 
 export function USDT_ADDRESS(chainId) {
   switch (chainId) {
-    case ChainId.MATIC:
-    return '0x79a86E77E7827b0ce56cE880E64B420ebAc1419D'
+    case ChainId.ELA:
+    return '0xA7daaF45AE0B2e567eB563Fb57eA9CFFFdFD73dd'
     default:
-      return '0x79a86E77E7827b0ce56cE880E64B420ebAc1419D'
+      return '0xA7daaF45AE0B2e567eB563Fb57eA9CFFFdFD73dd'
   }
 }
 

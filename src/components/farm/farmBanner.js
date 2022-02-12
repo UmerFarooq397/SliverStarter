@@ -19,7 +19,7 @@ export const FarmBanner = () => {
           <FormattedMessage id='farm2' />
         </p>
       </div>
-      <div className='farm_banner_right'></div>
+      {/* <div className='farm_banner_right'></div> */}
     </div>
   )
 }
