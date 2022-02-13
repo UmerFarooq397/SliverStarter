@@ -13,7 +13,7 @@ import { ReactComponent as LogoText } from '../../assets/image/logo-text.svg'
 import { ReactComponent as More } from '../../assets/icon/more.svg'
 import dot from '../../assets/icon/dot.png'
 import BSC from '../../assets/icon/BSC@2x.png'
-import HECO from '../../assets/icon/HECO@2x.png'
+import ELA from '../../assets/icon/Elastos.png'
 import MATIC from '../../assets/icon/MATIC@2x.png'
 import { useBalance } from '../../pages/Hooks'
 import { CHANGE_LOCALE } from '../../const'
@@ -187,13 +187,13 @@ export const Header = () => {
             {chainId == ChainId.ELA && (
               <img
                 onClick={() => {
-                  dispatch({
-                    type: HANDLE_CHANGE_NETWORKS,
-                    changeNetworkStatus: true,
-                  })
+                  // dispatch({
+                  //   type: HANDLE_CHANGE_NETWORKS,
+                  //   changeNetworkStatus: true,
+                  // })
                 }}
                 className='header-network'
-                src={HECO}
+                src={ELA}
               />
             )}
             

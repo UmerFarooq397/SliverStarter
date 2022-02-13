@@ -21,23 +21,23 @@ export default [
   // 核心池
 
   // {
-  //   name: 'WAR POOL (DAO)',
+  //   name: 'SST POOL (DAO)',
   //   icon: 'PAUL-HT_small@2x.png',
   //   rewards1: 'WAR',
   //   rewards2: null,
-  //   address: '0x980Dc14CCff09f8fc1843939c23590dE75b32e8b',
-  //   rewards1Address: '0x910651F81a605a6Ef35d05527d24A72fecef8bF0',
+  //   address: '0x9A935008d80BD5F0695477Caae695658D58FaEB9',
+  //   rewards1Address: '0xBe35266aA49cec3EC1Baa33123a1860bdE954c4b',
   //   rewards2Address: null,
   //   // apr
-  //   valueAprToken: '0x910651F81a605a6Ef35d05527d24A72fecef8bF0', // WAR
+  //   valueAprToken: '0xBe35266aA49cec3EC1Baa33123a1860bdE954c4b', // WAR
   //   valueAprPath: [
-  //     '0x5545153CCFcA01fbd7Dd11C0b23ba694D9509A6F', // WHT
+  //     '0x517E9e5d46C1EA8aB6f78677d6114Ef47F71f6c4', // WHT
   //   ],
   //   rewardsAprPath: [
-  //     '0x5545153CCFcA01fbd7Dd11C0b23ba694D9509A6F', // WHT
+  //     '0x517E9e5d46C1EA8aB6f78677d6114Ef47F71f6c4', // WHT
   //   ],
-  //   settleToken: '0xa71EdC38d189767582C38A3145b5873052c3e47a', //usdt
-  //   MLP: '0x910651F81a605a6Ef35d05527d24A72fecef8bF0', // WAR
+  //   settleToken: '0xA7daaF45AE0B2e567eB563Fb57eA9CFFFdFD73dd', //usdt
+  //   MLP: '0xBe35266aA49cec3EC1Baa33123a1860bdE954c4b', // WAR
   //   byModal: true,
   //   buyName: 'Buy WAR',
   //   abi: StakingPool3,
@@ -47,11 +47,11 @@ export default [
   //   dueDate: null,
   //   earnName: 'APY',
   //   status: 0,
-  //   rewards: 'WAR',
+  //   rewards: 'SST',
   //   decimal: 18,
   //   is_coming: false,
   //   mdexReward: false,
-  //   networkId: testNetworkId || 128,
+  //   networkId: testNetworkId || 21,
   //   mdexDaily: 0,
   //   mdexPid: '',
   //   svipFlag: true,

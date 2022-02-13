@@ -19,17 +19,17 @@ export const ChangeNetworks = ({ onClose }) => {
         <form className='form-app' action='/'>
           <div className='form-app__inner transction-submitted link-wallet'>
             <div className='form-app__inner__header'>
-              <FormattedMessage id='netWork3' />
+              {/* <FormattedMessage id='netWork3' /> */}
             </div>{' '}
             <div className='choose-network-box'>
               <div className={`choose-network change-network`}>
                 <p
                   className={`${chainId == ChainId.ELA ? 'active' : ''}`}
                   onClick={() => {
-                    changeNetwork(ChainId.ELA).then(() => {
-                      // TODO 关闭窗口
-                      onClose()
-                    })
+                    // changeNetwork(ChainId.ELA).then(() => {
+                    //   // TODO 关闭窗口
+                    //   onClose()
+                    // })
                   }}
                 >
                   <img src={HECO} />

@@ -334,7 +334,7 @@ const PoolsJoin = (props) => {
               className='form-app__inputbox-after-text'
               style={{
                 marginBottom: 0,
-                color: '#22292F',
+                color: '#ffffff',
                 textAlign: 'left',
                 opacity: 1,
               }}
@@ -350,7 +350,7 @@ const PoolsJoin = (props) => {
                 className='form-app__inputbox-after-text'
                 style={{
                   marginBottom: 0,
-                  color: '#22292F',
+                  color: '#ffffff',
                   textAlign: 'left',
                   opacity: 1,
                 }}

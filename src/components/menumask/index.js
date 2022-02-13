@@ -237,7 +237,7 @@ export const MenuMask = () => {
               >
                 <p
                   style={{
-                    color: '#22292F',
+                    color: '#ffffff',
                     padding: '0',
                     marginBottom: '0',
                   }}
@@ -247,7 +247,7 @@ export const MenuMask = () => {
                 </p>
                 {/* <p
                   style={{
-                    color: '#22292F',
+                    color: '#ffffff',
                     padding: '0',
                     marginBottom: '0',
                   }}
@@ -257,7 +257,7 @@ export const MenuMask = () => {
                 </p> */}
                 <p
                   style={{
-                    color: '#22292F',
+                    color: '#ffffff',
                     padding: '0',
                     marginBottom: '0',
                   }}
